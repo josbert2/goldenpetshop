@@ -1,0 +1,38 @@
+/* ==========================================================================
+   clients Holder shortcode responsive style - begin
+   ========================================================================== */
+
+@include ipad-landscape {
+
+    .mkdf-clients-grid-holder {
+
+        &.mkdf-four-columns {
+
+            .mkdf-item-space {
+                width: 50%;
+
+                &:nth-child(3n+1) {
+                    clear: none;
+                }
+            }
+        }
+    }
+}
+
+@include phone-portrait {
+
+    .mkdf-clients-grid-holder {
+
+        &.mkdf-four-columns {
+
+            .mkdf-item-space {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   clients Holder shortcode responsive style - end
+   ========================================================================== */

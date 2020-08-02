@@ -1,0 +1,186 @@
+/* ==========================================================================
+   Tabs shortcode responsive style - begin
+   ========================================================================== */
+
+@include ipad-landscape {
+	
+	.mkdf-tabs {
+		
+		&.mkdf-tabs-boxed {
+			
+			.mkdf-tabs-nav {
+				
+				li {
+					margin: 0 8px 0 0;
+				}
+			}
+		}
+		
+		&.mkdf-tabs-simple {
+			
+			.mkdf-tabs-nav {
+				
+				li {
+					margin: 0 26px 0 0;
+				}
+			}
+		}
+
+        &.mkdf-tabs-vertical {
+
+            &.overflow {
+                width: 100%;
+
+                .mkdf-tab-container {
+                    width: 100%;
+                }
+            }
+        }
+
+        &.mkdf-tabs-vertical.overflow {
+
+            .mkdf-tabs-nav {
+                width: 100%;
+                left: 0;
+                top: -87px;
+
+                li {
+                    float: left;
+                    width: 10%;
+                    border-radius: 5px 5px 0 0;
+                }
+
+                .mkdf-safari & {
+                    left: 0;
+                }
+            }
+        }
+	}
+}
+
+@include ipad-portrait {
+	
+	.mkdf-tabs {
+		
+		&.mkdf-tabs-standard {
+			
+			.mkdf-tabs-nav {
+				
+				li {
+					display: block;
+					float: none;
+					
+					a {
+						width: 100%;
+					}
+				}
+			}
+		}
+		
+		&.mkdf-tabs-boxed {
+			
+			.mkdf-tabs-nav {
+				
+				li {
+					display: block;
+					float: none;
+					margin: 0 0 8px;
+					
+					a {
+						width: 100%;
+					}
+				}
+			}
+		}
+		
+		&.mkdf-tabs-simple {
+			
+			.mkdf-tabs-nav {
+				
+				li {
+					margin: 0 20px 0 0;
+				}
+			}
+		}
+	}
+}
+
+@include phone-landscape {
+	
+	.mkdf-tabs {
+		
+		&.mkdf-tabs-simple {
+			
+			.mkdf-tabs-nav {
+                padding-bottom: 15px;
+				
+				li {
+					display: block;
+					float: none;
+					margin: 0 0 20px;
+					
+					a {
+						padding: 0;
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
+
+@include phone-portrait {
+
+    .mkdf-tabs {
+
+        &.mkdf-tabs-vertical.overflow {
+
+            .mkdf-tabs-nav {
+                top: -55px;
+
+                li {
+                    width: 12%;
+                    height: 55px;
+                }
+            }
+        }
+
+        &.mkdf-tabs-vertical:not(.overflow) {
+
+            .mkdf-tabs-nav {
+               width: 44px;
+
+                li {
+                    height: 65px;
+                }
+            }
+        }
+
+        &.mkdf-tabs-vertical {
+
+            .mkdf-tabs-nav {
+
+                li {
+
+                    a {
+                        .mkdf-tab-title {
+                            font-size: 27px;
+                            padding-top: 6px;
+                            margin: 0;
+                            left: 4px;
+                        }
+                    }
+
+                    &.ui-tabs-active:before {
+                        left: 6px;
+                        top: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   Tabs shortcode responsive style - end
+   ========================================================================== */

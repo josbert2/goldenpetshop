@@ -1,0 +1,1 @@
+<?php do_action( 'pawfriends_mikado_get_footer_template' );

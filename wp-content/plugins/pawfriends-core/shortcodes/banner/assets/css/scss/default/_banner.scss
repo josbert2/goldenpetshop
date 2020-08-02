@@ -1,0 +1,164 @@
+/* ==========================================================================
+   Banner shortcode style - begin
+   ========================================================================== */
+
+.mkdf-banner-holder {
+    @include mkdfRelativeHolderLayout();
+	
+	.touch & {
+		cursor: pointer;
+	}
+	
+	&.mkdf-disabled {
+		
+		.mkdf-banner-text-holder {
+			display: none;
+		}
+	}
+	
+	&.mkdf-banner-info-centered {
+		
+		.mkdf-banner-text-holder {
+			text-align: center;
+		}
+	}
+
+    &.foreground-image {
+        max-width: 100%;
+
+        .mkdf-banner-text-holder {
+            padding-left: 34%;
+        }
+    }
+	
+	.mkdf-banner-image {
+        @include mkdfRelativeHolderLayout();
+        border-radius: 5px;
+        overflow: hidden;
+        
+        > img {
+            transform: translateX(-5px) scale(1.03);
+            transition: .4s;
+        }
+
+		img {
+			display: block;
+		}
+
+        .mkdf-banner-foreground-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+
+            img {
+                border-radius: 5px;
+                height: 100%;
+                width: auto;
+            }
+
+        }
+	}
+	
+	.mkdf-banner-text-holder {
+		@include mkdfAbsoluteHolderLayout();
+		padding: 7%;
+		box-sizing: border-box;
+	}
+	
+	.mkdf-banner-text-outer {
+		@include mkdfTableLayout();
+	}
+	
+	.mkdf-banner-text-inner {
+		position: relative;
+		display: table-cell;
+		height: 100%;
+		width: 100%;
+		vertical-align: middle;
+	}
+
+    .mkdf-banner-title-holder {
+        @include mkdfSVGbg( #fff );
+        display: inline-block;
+        position: relative;
+        padding: 2px 13px 4px 9px;
+        margin-left: -9px;
+        top: -2px;
+        margin-bottom: -4px;
+        z-index: 999;
+        transition: all .2s ease-out;
+        
+        .mkdf-active-hover {
+            display: block;
+            clip-path: circle(0);
+            -webkit-clip-path: circle(0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            margin-left: -10px;
+            margin-top: -2px;
+            transition: .2s;
+        }
+
+        .mkdf-banner-title {
+            color: inherit;
+        }
+    }
+
+    &:hover {
+
+        .mkdf-banner-image {
+            
+            > img {
+                transform: translateX(5px) scale(1.03);
+            }
+        }
+
+        .mkdf-banner-title-holder {
+            color: $first-main-color;
+
+            .mkdf-active-hover {
+                clip-path: circle(150%);
+                -webkit-clip-path: circle(150%);
+                transition: 1s;
+            }
+        }
+    }
+	
+	.mkdf-banner-text {
+		margin: 6px 0 0 0;
+	}
+	
+	.mkdf-banner-title {
+		margin: 0;
+        position: relative;
+	}
+	
+	.mkdf-banner-link-holder {
+		margin-top: 16px;
+        color: $first-main-color;
+
+        .mkdf-btn {
+            color: inherit;
+        }
+
+        .mkdf-btn.mkdf-btn-simple:not(.mkdf-btn-custom-hover-color) {
+
+            &:hover {
+                color: inherit !important;
+            }
+        }
+	}
+
+	.mkdf-banner-link {
+		@include mkdfAbsoluteHolderLayout();
+		z-index: 1;
+	}
+}
+/* ==========================================================================
+   Banner shortcode style - end
+   ========================================================================== */

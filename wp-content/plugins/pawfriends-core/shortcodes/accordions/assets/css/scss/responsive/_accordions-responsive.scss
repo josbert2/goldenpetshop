@@ -1,0 +1,21 @@
+/* ==========================================================================
+   Accordions shortcode responsive style - begin
+   ========================================================================== */
+
+.mkdf-accordion-holder {
+
+    &.mkdf-ac-boxed {
+
+        .mkdf-accordion-title {
+            padding: 26px 75px 30px 40px;
+
+            .mkdf-accordion-mark {
+                right: 40px;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   Accordions shortcode responsive style - end
+   ========================================================================== */

@@ -1,0 +1,356 @@
+/* ==========================================================================
+   Team shortcode style - begin
+   ========================================================================== */
+
+.mkdf-team-holder {
+    @include mkdfRelativeHolderLayout();
+	
+	&.mkdf-team-info-on-image {
+		
+		.touch & {
+			cursor: pointer;
+		}
+		
+		.mkdf-team-social-holder {
+            position: absolute;
+            top: 9px;
+            left: 9px;
+            z-index: 999;
+            height: 51px;
+            cursor: pointer;
+
+            &:after {
+                content: "";
+                position: absolute;
+                left: -3px;
+                top: -5px;
+                width: 133px;
+                cursor: pointer;
+                height: 128px;
+                pointer-events: none;
+                z-index: -123;
+            }
+
+            svg.mkdf-social {
+                width: 48px;
+                height: 51.3px;
+
+                path {
+                    transition: .3s;
+                    fill: #fff;
+                }
+            }
+
+            .mkdf-team-icon-holder {
+                visibility: hidden;
+                opacity: 0;
+                transform: translate(0, 0) scale(.6);
+                transition: .2s;
+                position: absolute;
+                top: 13px;
+                left: 18px;
+                z-index: -1;
+
+                svg.mkdf-social-icon {
+                    width: 21px;
+                    height: 19px;
+
+                    path {
+                        fill: #fff;
+                    }
+                }
+
+                .mkdf-icon-shortcode {
+                    position: absolute;
+                    font-size: 11px;
+                    top: 0;
+                    left: 0;
+                    transform: translate(40%, 35%);
+                    color: $first-main-color;
+
+                    .mkdf-icon-font-awesome {
+                        transform: translate(16%, -6%);
+
+                        &.fa-facebook-f {
+                            position: relative;
+                            left: 4px;
+                        }
+
+                        &.fa-pinterest-p {
+                            position: relative;
+                            left: 1px;
+                        }
+                    }
+
+                    .mkdf-icon-ion-icon {
+                        transform: translate(27%, -6%);
+
+                        &.ion-social-facebook {
+                            transform: translate(157%,-6%);
+                        }
+                    }
+
+                    .mkdf-icon-simple-line-icon {
+                        transform: translate(10%, -5%);
+                    }
+                }
+
+                a {
+
+                    &:hover {
+
+                        svg.mkdf-social-icon {
+
+                            path {
+                                fill: $first-main-color;
+                            }
+                        }
+
+                        .mkdf-icon-shortcode {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+
+            .mkdf-icon-dripicons.social-holder {
+                position: absolute;
+                top: 17px;
+                left: 15px;
+                font-size: 20px;
+                transition: .3s;
+                color: $first-main-color;
+            }
+
+            &:hover {
+
+                &:after {
+                    pointer-events: auto;
+                }
+
+                svg.mkdf-social {
+
+                    path {
+                        fill: $first-main-color;
+                    }
+                }
+
+                .mkdf-icon-dripicons.social-holder {
+                    color: #fff;
+                }
+
+                div.mkdf-team-icon-holder {
+                    visibility: visible;
+                    opacity: 1;
+
+                    &:nth-child(2) {
+                        transform: translate(33px, -6px) scale(1);
+                    }
+
+                    &:nth-child(3) {
+                        transform: translate(36px, 21px) scale(1);
+                        transition-delay: .2s;
+                    }
+
+                    &:nth-child(4) {
+                        transform: translate(16px, 43px) scale(1);
+                        transition-delay: .3s;
+                    }
+
+                    &:nth-child(5) {
+                        transform: translate(-13px,40px) scale(1);
+                        transition-delay: .4s
+                    }
+
+                    &:nth-child(6) {
+                        transform: translate(45px,46px) scale(1);
+                        transition-delay: .5s;
+                    }
+                }
+            }
+		}
+
+        .mkdf-team-position,
+        .mkdf-team-name {
+            @include mkdfSVGbg(#fff);
+            display: inline-block;
+            position: relative;
+        }
+
+        .mkdf-team-position {
+            padding: 5px 14px 5px 11px;
+            margin-bottom: 9px;
+        }
+
+        .mkdf-team-position-text,
+        .mkdf-team-name-text {
+            position: relative;
+            color: $first-main-color;
+            margin: 0;
+        }
+
+        .mkdf-team-name-text {
+            transition: color .2s ease-in-out;
+        }
+
+        .mkdf-team-name {
+            padding: 3px 14px 5px 8px;
+
+            svg {
+
+                path {
+                    transition: .3s;
+                }
+            }
+        }
+
+        .mkdf-team-image {
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .mkdf-active-hover-middle, .mkdf-team-name-text {
+            transition: .3s;
+        }
+
+        .mkdf-team-position-holder {
+            transform: translateY(30px);
+            transition: .3s;
+
+            .mkdf-team-position-text {
+                opacity: 0;
+            }
+            
+            .mkdf-active-hover {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                position: absolute;
+                clip-path: circle(0);
+                -webkit-clip-path: circle(0);
+                transition: .3s;
+            }
+        }
+
+        &:hover {
+
+            .mkdf-team-position-holder {
+                transform: translateY(0);
+                
+                .mkdf-team-position-text {
+                    opacity: 1;
+                    transition: .3s .15s;
+                }
+
+                .mkdf-active-hover {
+                    clip-path: circle(150%);
+                    -webkit-clip-path: circle(150%);
+                    transition: .8s;
+                }
+            }
+
+            .mkdf-team-name {
+
+                svg {
+
+                    path {
+                        fill: currentColor;
+                        stroke: currentColor;
+                    }
+                }
+
+                .mkdf-active-hover {
+                    color: $first-main-color;
+                }
+
+                .mkdf-active-hover-middle {
+                    background-color: $first-main-color;
+                }
+
+                .mkdf-team-name-text {
+                    color: #fff;
+                }
+            }
+        }
+	}
+
+    &.mkdf-team-info-below-image {
+
+        .mkdf-team-social-holder {
+            @include mkdfRelativeHolderLayout();
+            margin: 17px 0 0;
+
+            .mkdf-team-icon {
+                font-size: 14px;
+                margin: 0 12px 0 0;
+
+                .mkdf-icon-element {
+                    font-size: inherit;
+                    transition: none;
+                }
+            }
+        }
+
+        .mkdf-team-position {
+            margin: 3px 0 0;
+        }
+    }
+
+    .mkdf-team-image {
+        @include mkdfRelativeHolderLayout();
+
+        img {
+            display: block;
+            border-radius: 4px;
+        }
+    }
+	
+	.mkdf-team-info {
+		@include mkdfRelativeHolderLayout();
+		margin: 19px 0 0;
+	}
+
+    .mkdf-team-name {
+        margin: 0;
+        position: relative;
+        color: $first-main-color;
+    }
+
+	.mkdf-team-text {
+		margin: 15px 0 0;
+	}
+	
+	.mkdf-team-social-wrapper {
+		@include mkdfAbsoluteHolderLayout();
+		z-index: 1;
+	}
+	
+	.mkdf-team-social-outer {
+		@include mkdfTableLayout();
+	}
+	
+	.mkdf-team-social-inner {
+		position: relative;
+		display: table-cell;
+		height: 100%;
+		width: 100%;
+		padding: 20px 40px 29px;
+		vertical-align: bottom;
+        text-align: center;
+	}
+
+    .mkdf-team-link {
+        @include mkdfAbsoluteHolderLayout();
+        pointer-events: auto;
+    }
+
+}
+/* ==========================================================================
+   Team shortcode style - end
+   ========================================================================== */

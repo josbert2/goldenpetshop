@@ -1,0 +1,46 @@
+/* ==========================================================================
+   Portfolio Single - Gallery layout style - begin
+   ========================================================================== */
+
+.mkdf-portfolio-single-holder {
+    
+    &.mkdf-ps-gallery-layout {
+        
+        .mkdf-ps-image-holder {
+	        width: 100%;
+	
+	        .mkdf-ps-image {
+		        float: left;
+	        }
+        }
+	
+	    > .mkdf-grid-row {
+		    margin-top: 40px;
+	    }
+
+		.mkdf-ps-content-item {
+
+			.mkdf-st-text {
+				margin: 21px 0 7px;
+			}
+		}
+
+        .mkdf-ps-info-item:not(.mkdf-ps-content-item) {
+
+            a {
+                color: #8f9093;
+
+                &:hover {
+                    color: $first-main-color;
+                }
+            }
+        }
+
+        .mkdf-ps-navigation {
+            margin: 70px 0 80px;
+        }
+    }
+}
+/* ==========================================================================
+   Portfolio Single - Gallery layout style - end
+   ========================================================================== */

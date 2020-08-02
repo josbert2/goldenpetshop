@@ -1,0 +1,18 @@
+/* ==========================================================================
+   Underline Text shortcode styles - begin
+   ========================================================================== */
+
+.mkdf-underline-text-holder {
+    @include mkdfRelativeHolderLayout(top);
+	margin: 0;
+	
+	.mkdf-ut-underline {
+		border-bottom: 2px solid $first-main-color;
+	}
+}
+
+/* ==========================================================================
+   Underline Text shortcode styles - end
+   ========================================================================== */
+
+

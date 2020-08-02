@@ -1,0 +1,563 @@
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+/* ==========================================================================
+   Shortcodes responsive styles
+   ========================================================================== */
+/* ==========================================================================
+   Accordions shortcode responsive style - begin
+   ========================================================================== */
+.mkdf-accordion-holder.mkdf-ac-boxed .mkdf-accordion-title {
+  padding: 26px 75px 30px 40px;
+}
+
+.mkdf-accordion-holder.mkdf-ac-boxed .mkdf-accordion-title .mkdf-accordion-mark {
+  right: 40px;
+}
+
+/* ==========================================================================
+   Accordions shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Banner shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 480px) {
+  .mkdf-banner-holder .mkdf-banner-text-holder {
+    padding: 10px;
+  }
+  .mkdf-banner-holder .mkdf-banner-text {
+    margin: 0;
+  }
+}
+
+/* ==========================================================================
+   Banner shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+  Block Quote shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 480px) {
+  .mkdf-block-quote-holder blockquote {
+    padding: 6px 0 2px;
+  }
+  .mkdf-block-quote-holder blockquote p {
+    margin-left: 0;
+  }
+  .mkdf-block-quote-holder blockquote svg.mkdf-blockquote {
+    float: none;
+  }
+}
+
+/* ==========================================================================
+   Block Quote shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Button shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .mkdf-btn.mkdf-btn-large, .mkdf-btn.mkdf-btn-huge {
+    padding: 14px 36px;
+  }
+}
+
+/* ==========================================================================
+   Button shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Call To Action shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (min-width: 1201px) and (max-width: 1300px) {
+  .mkdf-call-to-action-holder .mkdf-grid {
+    width: 1100px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .mkdf-call-to-action-holder.mkdf-three-quarters-columns .mkdf-cta-text-holder, .mkdf-call-to-action-holder.mkdf-four-fifths-columns .mkdf-cta-text-holder {
+    width: 66.66666666666667%;
+  }
+  .mkdf-call-to-action-holder.mkdf-three-quarters-columns .mkdf-cta-button-holder, .mkdf-call-to-action-holder.mkdf-four-fifths-columns .mkdf-cta-button-holder {
+    width: 33.33333333333333%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-call-to-action-holder.mkdf-normal-layout .mkdf-cta-inner,
+  .mkdf-call-to-action-holder.mkdf-normal-layout .mkdf-cta-text-holder,
+  .mkdf-call-to-action-holder.mkdf-normal-layout .mkdf-cta-button-holder {
+    display: block;
+  }
+  .mkdf-call-to-action-holder.mkdf-normal-layout .mkdf-cta-button-holder {
+    margin: 28px 0 0;
+    text-align: initial;
+  }
+  .mkdf-call-to-action-holder.mkdf-two-halves-columns .mkdf-cta-text-holder,
+  .mkdf-call-to-action-holder.mkdf-two-halves-columns .mkdf-cta-button-holder, .mkdf-call-to-action-holder.mkdf-two-thirds-columns .mkdf-cta-text-holder,
+  .mkdf-call-to-action-holder.mkdf-two-thirds-columns .mkdf-cta-button-holder, .mkdf-call-to-action-holder.mkdf-three-quarters-columns .mkdf-cta-text-holder,
+  .mkdf-call-to-action-holder.mkdf-three-quarters-columns .mkdf-cta-button-holder, .mkdf-call-to-action-holder.mkdf-four-fifths-columns .mkdf-cta-text-holder,
+  .mkdf-call-to-action-holder.mkdf-four-fifths-columns .mkdf-cta-button-holder {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Call To Action shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   clients Holder shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .mkdf-clients-grid-holder.mkdf-four-columns .mkdf-item-space {
+    width: 50%;
+  }
+  .mkdf-clients-grid-holder.mkdf-four-columns .mkdf-item-space:nth-child(3n+1) {
+    clear: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .mkdf-clients-grid-holder.mkdf-four-columns .mkdf-item-space {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+/* ==========================================================================
+   clients Holder shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Countdown shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1200px) {
+  .mkdf-countdown .countdown-row .countdown-section .countdown-amount {
+    font-size: 60px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-countdown .countdown-row.countdown-show4 .countdown-section, .mkdf-countdown .countdown-row.countdown-show5 .countdown-section, .mkdf-countdown .countdown-row.countdown-show6 .countdown-section {
+    width: 33.33333333333333%;
+  }
+  .mkdf-countdown .countdown-row .countdown-section .countdown-amount {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-countdown .countdown-row .countdown-section .countdown-amount {
+    font-size: 40px;
+  }
+}
+
+/* ==========================================================================
+   Countdown shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Custom Font shortcode responsive styles - begin
+   ========================================================================== */
+@media only screen and (max-width: 768px) {
+  .mkdf-custom-font-holder.mkdf-disable-title-break br {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Custom Font shortcode responsive styles - end
+   ========================================================================== */
+/* ==========================================================================
+   Elements Holder shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1366px) {
+  .mkdf-elements-holder.mkdf-responsive-mode-1366.mkdf-two-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-1366.mkdf-three-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-1366.mkdf-four-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-1366.mkdf-five-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-1366.mkdf-six-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-1366.mkdf-one-column-alignment-left .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: left;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-1366.mkdf-one-column-alignment-right .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: right;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-1366.mkdf-one-column-alignment-center .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-elements-holder.mkdf-responsive-mode-1024.mkdf-two-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-1024.mkdf-three-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-1024.mkdf-four-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-1024.mkdf-five-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-1024.mkdf-six-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-1024.mkdf-one-column-alignment-left .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: left;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-1024.mkdf-one-column-alignment-right .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: right;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-1024.mkdf-one-column-alignment-center .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-elements-holder.mkdf-responsive-mode-768.mkdf-two-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-768.mkdf-three-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-768.mkdf-four-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-768.mkdf-five-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-768.mkdf-six-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-768.mkdf-one-column-alignment-left .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: left;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-768.mkdf-one-column-alignment-right .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: right;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-768.mkdf-one-column-alignment-center .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-elements-holder.mkdf-responsive-mode-680.mkdf-two-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-680.mkdf-three-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-680.mkdf-four-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-680.mkdf-five-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-680.mkdf-six-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-680.mkdf-one-column-alignment-left .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: left;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-680.mkdf-one-column-alignment-right .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: right;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-680.mkdf-one-column-alignment-center .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .mkdf-elements-holder.mkdf-responsive-mode-480.mkdf-two-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-480.mkdf-three-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-480.mkdf-four-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-480.mkdf-five-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-480.mkdf-six-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-480.mkdf-one-column-alignment-left .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: left;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-480.mkdf-one-column-alignment-right .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: right;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-480.mkdf-one-column-alignment-center .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: center;
+  }
+  .mkdf-elements-holder .mkdf-eh-item-content {
+    padding: 0 10px;
+  }
+}
+
+/* ==========================================================================
+   Elements Holder shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Google Map shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .mkdf-google-map-overlay {
+    display: block;
+  }
+}
+
+/* ==========================================================================
+   Google Map shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Pricing Tables shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1440px) {
+  .mkdf-price-table .mkdf-pt-inner .mkdf-pt-col-1 {
+    width: 35%;
+  }
+  .mkdf-price-table .mkdf-pt-inner .mkdf-pt-col-2 {
+    width: 65%;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .mkdf-price-table .mkdf-pt-inner .mkdf-pt-col-2 {
+    padding: 0 5px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .mkdf-price-table .mkdf-pt-inner .mkdf-pt-col-1 .mkdf-pl-price-holder .mkdf-pt-value,
+  .mkdf-price-table .mkdf-pt-inner .mkdf-pt-col-1 .mkdf-pl-price-holder .mkdf-pt-price {
+    font-size: 48px;
+  }
+  .mkdf-price-table .mkdf-pt-inner .mkdf-pt-col-1 .mkdf-pl-price-holder .mkdf-pt-value {
+    font-size: 33px;
+  }
+  .mkdf-price-table .mkdf-pt-inner .mkdf-pt-col-2 {
+    padding: 0 0 0 18px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-price-table.mkdf-item-space {
+    width: 50% !important;
+  }
+  .mkdf-price-table.mkdf-item-space .mkdf-pt-inner .mkdf-pt-col-1 {
+    width: 28%;
+  }
+  .mkdf-price-table.mkdf-item-space .mkdf-pt-inner .mkdf-pt-col-1 .mkdf-pt-mark {
+    padding: 0;
+  }
+  .mkdf-price-table.mkdf-item-space .mkdf-pt-inner .mkdf-pt-col-2 {
+    width: 72%;
+    padding: 0 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-price-table .mkdf-pt-inner .mkdf-pt-col-1 {
+    width: 32%;
+  }
+  .mkdf-price-table .mkdf-pt-inner .mkdf-pt-col-1 .mkdf-pl-price-holder {
+    padding: 3px 15px 1px 9px;
+  }
+  .mkdf-price-table .mkdf-pt-inner .mkdf-pt-col-1 .mkdf-pl-price-holder .mkdf-pt-value,
+  .mkdf-price-table .mkdf-pt-inner .mkdf-pt-col-1 .mkdf-pl-price-holder .mkdf-pt-price {
+    font-size: 40px;
+  }
+  .mkdf-price-table .mkdf-pt-inner .mkdf-pt-col-1 .mkdf-pl-price-holder .mkdf-pt-value {
+    font-size: 29px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-price-table.mkdf-item-space {
+    width: 100% !important;
+  }
+  .mkdf-price-table.mkdf-item-space .mkdf-pt-inner .mkdf-pt-col-1 .mkdf-pt-mark {
+    padding: 0 0 0 10px;
+  }
+  .mkdf-price-table.mkdf-item-space .mkdf-pt-inner .mkdf-pt-col-2 {
+    padding: 0 0 0 15px;
+  }
+}
+
+/* ==========================================================================
+   Pricing Tables shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Section Title shortcode responsive styles - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .mkdf-section-title-holder {
+    padding: 0 !important;
+  }
+  .mkdf-section-title-holder.mkdf-st-disable-title-break .mkdf-st-title br {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Section Title shortcode responsive styles - end
+   ========================================================================== */
+/* ==========================================================================
+   Tabs shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .mkdf-tabs.mkdf-tabs-boxed .mkdf-tabs-nav li {
+    margin: 0 8px 0 0;
+  }
+  .mkdf-tabs.mkdf-tabs-simple .mkdf-tabs-nav li {
+    margin: 0 26px 0 0;
+  }
+  .mkdf-tabs.mkdf-tabs-vertical.overflow {
+    width: 100%;
+  }
+  .mkdf-tabs.mkdf-tabs-vertical.overflow .mkdf-tab-container {
+    width: 100%;
+  }
+  .mkdf-tabs.mkdf-tabs-vertical.overflow .mkdf-tabs-nav {
+    width: 100%;
+    left: 0;
+    top: -87px;
+  }
+  .mkdf-tabs.mkdf-tabs-vertical.overflow .mkdf-tabs-nav li {
+    float: left;
+    width: 10%;
+    border-radius: 5px 5px 0 0;
+  }
+  .mkdf-safari .mkdf-tabs.mkdf-tabs-vertical.overflow .mkdf-tabs-nav {
+    left: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-tabs.mkdf-tabs-standard .mkdf-tabs-nav li {
+    display: block;
+    float: none;
+  }
+  .mkdf-tabs.mkdf-tabs-standard .mkdf-tabs-nav li a {
+    width: 100%;
+  }
+  .mkdf-tabs.mkdf-tabs-boxed .mkdf-tabs-nav li {
+    display: block;
+    float: none;
+    margin: 0 0 8px;
+  }
+  .mkdf-tabs.mkdf-tabs-boxed .mkdf-tabs-nav li a {
+    width: 100%;
+  }
+  .mkdf-tabs.mkdf-tabs-simple .mkdf-tabs-nav li {
+    margin: 0 20px 0 0;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-tabs.mkdf-tabs-simple .mkdf-tabs-nav {
+    padding-bottom: 15px;
+  }
+  .mkdf-tabs.mkdf-tabs-simple .mkdf-tabs-nav li {
+    display: block;
+    float: none;
+    margin: 0 0 20px;
+  }
+  .mkdf-tabs.mkdf-tabs-simple .mkdf-tabs-nav li a {
+    padding: 0;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .mkdf-tabs.mkdf-tabs-vertical.overflow .mkdf-tabs-nav {
+    top: -55px;
+  }
+  .mkdf-tabs.mkdf-tabs-vertical.overflow .mkdf-tabs-nav li {
+    width: 12%;
+    height: 55px;
+  }
+  .mkdf-tabs.mkdf-tabs-vertical:not(.overflow) .mkdf-tabs-nav {
+    width: 44px;
+  }
+  .mkdf-tabs.mkdf-tabs-vertical:not(.overflow) .mkdf-tabs-nav li {
+    height: 65px;
+  }
+  .mkdf-tabs.mkdf-tabs-vertical .mkdf-tabs-nav li a .mkdf-tab-title {
+    font-size: 27px;
+    padding-top: 6px;
+    margin: 0;
+    left: 4px;
+  }
+  .mkdf-tabs.mkdf-tabs-vertical .mkdf-tabs-nav li.ui-tabs-active:before {
+    left: 6px;
+    top: 0;
+  }
+}
+
+/* ==========================================================================
+   Tabs shortcode responsive style - end
+   ========================================================================== */
+
+/*# sourceMappingURL=../../../../plugins/pawfriends-core/assets/css/shortcodes-map-responsive.css.map */

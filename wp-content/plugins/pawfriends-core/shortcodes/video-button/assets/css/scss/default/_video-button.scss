@@ -1,0 +1,75 @@
+/* ==========================================================================
+   Video Button shortcode start styles
+   ========================================================================== */
+
+.mkdf-video-button-holder {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+    width: 100%;
+
+    &:hover {
+        
+        .mkdf-video-button {
+
+            path {
+                transform: scale(1.2);
+            }
+        }
+    }
+
+    .mkdf-video-button {
+        overflow: visible;
+
+        path {
+            transform-origin: center;
+            transition: .3s
+        }
+    }
+
+    .mkdf-video-button-play,
+    .mkdf-video-button-play-image {
+        @include mkdfAbsoluteHolderLayout();
+        z-index: 1;
+    }
+
+    .mkdf-video-button-play {
+
+        .mkdf-video-button-play-inner {
+            color: $first-main-color;
+            position: relative;
+            width: 66px;
+            height: 62px;
+            top: 50%;
+            left: 50%;
+            display: block;
+            text-align: center;
+            transform: translate(-50%, -50%);
+
+            svg {
+                width: 66px;
+                height: 62px;
+
+                path.mkdf-video-button-circle {
+                    fill: #fff;
+                }
+
+                polygon.mkdf-video-button-triangle {
+                    fill: currentColor;
+                }
+            }
+        }
+    }
+
+	.mkdf-video-button-image {
+		@include mkdfRelativeHolderLayout();
+
+		img {
+			display: block;
+			width: 100%;
+		}
+	}
+}
+/* ==========================================================================
+   Video Button shortcode end styles
+   ========================================================================== */

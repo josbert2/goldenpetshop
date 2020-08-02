@@ -1,0 +1,4885 @@
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+/* ==========================================================================
+   Shortcodes styles
+   ========================================================================== */
+/* ==========================================================================
+   Accordions shortcode style - begin
+   ========================================================================== */
+.mkdf-accordion-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.mkdf-accordion-holder .mkdf-accordion-title {
+  position: relative;
+  cursor: pointer;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transform: translateZ(0px);
+  transform: translateZ(0px);
+  -webkit-transition: color .2s ease-out, background-color .2s ease-out;
+  -o-transition: color .2s ease-out, background-color .2s ease-out;
+  transition: color .2s ease-out, background-color .2s ease-out;
+}
+
+.mkdf-accordion-holder .mkdf-accordion-title .mkdf-tab-title {
+  display: block;
+  line-height: inherit;
+}
+
+.mkdf-accordion-holder .mkdf-accordion-title .mkdf-accordion-mark {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 20px;
+  height: 18px;
+  margin: -1px 0 0;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.mkdf-accordion-holder .mkdf-accordion-title .mkdf-accordion-mark span {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: inherit;
+  line-height: inherit;
+  -webkit-transition: opacity .2s ease-out;
+  -o-transition: opacity .2s ease-out;
+  transition: opacity .2s ease-out;
+}
+
+.mkdf-accordion-holder .mkdf-accordion-title .mkdf-accordion-mark span:before {
+  display: block;
+  line-height: inherit;
+}
+
+.mkdf-accordion-holder .mkdf-accordion-title .mkdf-accordion-mark span.mkdf_icon_minus {
+  opacity: 0;
+}
+
+.mkdf-accordion-holder .mkdf-accordion-title .mkdf-accordion-mark span.mkdf_icon_plus {
+  opacity: 1;
+}
+
+.mkdf-accordion-holder .mkdf-accordion-title.ui-state-active .mkdf-accordion-mark span.mkdf_icon_minus, .mkdf-accordion-holder .mkdf-accordion-title.ui-state-hover .mkdf-accordion-mark span.mkdf_icon_minus {
+  opacity: 1;
+}
+
+.mkdf-accordion-holder .mkdf-accordion-title.ui-state-active .mkdf-accordion-mark span.mkdf_icon_plus, .mkdf-accordion-holder .mkdf-accordion-title.ui-state-hover .mkdf-accordion-mark span.mkdf_icon_plus {
+  opacity: 0;
+}
+
+.mkdf-accordion-holder .mkdf-accordion-content {
+  margin: 0;
+}
+
+.mkdf-accordion-holder .mkdf-accordion-content p {
+  margin: 0;
+}
+
+.mkdf-accordion-holder.mkdf-ac-boxed.mkdf-white-skin .mkdf-accordion-title {
+  background-color: #fff;
+}
+
+.mkdf-accordion-holder.mkdf-ac-boxed .mkdf-accordion-title {
+  margin: 15px 0 0;
+  padding: 26px 43px 30px;
+  background-color: #f7f7f5;
+}
+
+.mkdf-accordion-holder.mkdf-ac-boxed .mkdf-accordion-title:first-child {
+  margin: 0;
+}
+
+.mkdf-accordion-holder.mkdf-ac-boxed .mkdf-accordion-title .mkdf-accordion-mark {
+  width: 42px;
+  height: 39px;
+  right: 47px;
+}
+
+.mkdf-accordion-holder.mkdf-ac-boxed .mkdf-accordion-title .mkdf-accordion-mark span.mkdf_icon_minus .st0 {
+  fill: #EF4337;
+}
+
+.mkdf-accordion-holder.mkdf-ac-boxed .mkdf-accordion-title .mkdf-accordion-mark span.mkdf_icon_minus .st1 {
+  fill: #FFFFFF;
+}
+
+.mkdf-accordion-holder.mkdf-ac-boxed .mkdf-accordion-title .mkdf-accordion-mark span.mkdf_icon_plus .st0 {
+  fill: #FFFFFF;
+}
+
+.mkdf-accordion-holder.mkdf-ac-boxed .mkdf-accordion-title .mkdf-accordion-mark span.mkdf_icon_plus .st1 {
+  fill: #EF4337;
+}
+
+.mkdf-accordion-holder.mkdf-ac-boxed .mkdf-accordion-content {
+  padding: 0px 43px 55px;
+  background-color: #f7f7f5;
+}
+
+.mkdf-accordion-holder.mkdf-ac-boxed .mkdf-accordion-content:before {
+  content: '';
+  margin-bottom: 25px;
+  background-color: #fff;
+  display: block;
+  width: 100%;
+  height: 2px;
+}
+
+.mkdf-accordion-holder.mkdf-ac-simple {
+  border-bottom: 1px solid #ececec;
+}
+
+.mkdf-accordion-holder.mkdf-ac-simple .mkdf-accordion-title {
+  padding: 17px 0 17px 30px;
+  border-top: 1px solid #ececec;
+}
+
+.mkdf-accordion-holder.mkdf-ac-simple .mkdf-accordion-content {
+  border-top: 1px solid transparent;
+}
+
+.mkdf-accordion-holder.mkdf-ac-simple .mkdf-accordion-content.ui-accordion-content-active {
+  border-color: #ececec;
+}
+
+.mkdf-accordion-holder.mkdf-ac-simple .mkdf-accordion-content {
+  padding: 21px 0 16px;
+}
+
+/* ==========================================================================
+   Accordions shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Banner shortcode style - begin
+   ========================================================================== */
+.mkdf-banner-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.touch .mkdf-banner-holder {
+  cursor: pointer;
+}
+
+.mkdf-banner-holder.mkdf-disabled .mkdf-banner-text-holder {
+  display: none;
+}
+
+.mkdf-banner-holder.mkdf-banner-info-centered .mkdf-banner-text-holder {
+  text-align: center;
+}
+
+.mkdf-banner-holder.foreground-image {
+  max-width: 100%;
+}
+
+.mkdf-banner-holder.foreground-image .mkdf-banner-text-holder {
+  padding-left: 34%;
+}
+
+.mkdf-banner-holder .mkdf-banner-image {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.mkdf-banner-holder .mkdf-banner-image > img {
+  -webkit-transform: translateX(-5px) scale(1.03);
+  -ms-transform: translateX(-5px) scale(1.03);
+  transform: translateX(-5px) scale(1.03);
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
+}
+
+.mkdf-banner-holder .mkdf-banner-image img {
+  display: block;
+}
+
+.mkdf-banner-holder .mkdf-banner-image .mkdf-banner-foreground-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.mkdf-banner-holder .mkdf-banner-image .mkdf-banner-foreground-image img {
+  border-radius: 5px;
+  height: 100%;
+  width: auto;
+}
+
+.mkdf-banner-holder .mkdf-banner-text-holder {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 7%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.mkdf-banner-holder .mkdf-banner-text-outer {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.mkdf-banner-holder .mkdf-banner-text-inner {
+  position: relative;
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.mkdf-banner-holder .mkdf-banner-title-holder {
+  -webkit-transition: opacity .2s ease-out;
+  -o-transition: opacity .2s ease-out;
+  transition: opacity .2s ease-out;
+  display: inline-block;
+  position: relative;
+  padding: 2px 13px 4px 9px;
+  margin-left: -9px;
+  top: -2px;
+  margin-bottom: -4px;
+  z-index: 999;
+  -webkit-transition: all .2s ease-out;
+  -o-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+.mkdf-banner-holder .mkdf-banner-title-holder .mkdf-active-hover-middle {
+  position: absolute;
+  top: 0;
+  left: 8px;
+  width: calc(100% - 16px);
+  height: 100%;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.mkdf-banner-holder .mkdf-banner-title-holder svg {
+  position: absolute;
+  top: 0;
+}
+
+.mkdf-banner-holder .mkdf-banner-title-holder svg path {
+  fill: #fff;
+  stroke: #fff;
+}
+
+.mkdf-banner-holder .mkdf-banner-title-holder svg.mkdf-active-hover-left {
+  left: 0;
+}
+
+.mkdf-banner-holder .mkdf-banner-title-holder svg.mkdf-active-hover-right {
+  right: 0;
+}
+
+.mkdf-banner-holder .mkdf-banner-title-holder .mkdf-active-hover {
+  display: block;
+  clip-path: circle(0);
+  -webkit-clip-path: circle(0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin-left: -10px;
+  margin-top: -2px;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+}
+
+.mkdf-banner-holder .mkdf-banner-title-holder .mkdf-banner-title {
+  color: inherit;
+}
+
+.mkdf-banner-holder:hover .mkdf-banner-image > img {
+  -webkit-transform: translateX(5px) scale(1.03);
+  -ms-transform: translateX(5px) scale(1.03);
+  transform: translateX(5px) scale(1.03);
+}
+
+.mkdf-banner-holder:hover .mkdf-banner-title-holder {
+  color: #f04336;
+}
+
+.mkdf-banner-holder:hover .mkdf-banner-title-holder .mkdf-active-hover {
+  clip-path: circle(150%);
+  -webkit-clip-path: circle(150%);
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+
+.mkdf-banner-holder .mkdf-banner-text {
+  margin: 6px 0 0 0;
+}
+
+.mkdf-banner-holder .mkdf-banner-title {
+  margin: 0;
+  position: relative;
+}
+
+.mkdf-banner-holder .mkdf-banner-link-holder {
+  margin-top: 16px;
+  color: #f04336;
+}
+
+.mkdf-banner-holder .mkdf-banner-link-holder .mkdf-btn {
+  color: inherit;
+}
+
+.mkdf-banner-holder .mkdf-banner-link-holder .mkdf-btn.mkdf-btn-simple:not(.mkdf-btn-custom-hover-color):hover {
+  color: inherit !important;
+}
+
+.mkdf-banner-holder .mkdf-banner-link {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* ==========================================================================
+   Banner shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+  Block Quote shortcode style - begin
+   ========================================================================== */
+.mkdf-block-quote-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.mkdf-block-quote-holder blockquote {
+  padding: 6px 0 2px 24px;
+}
+
+.mkdf-block-quote-holder blockquote p {
+  margin-left: 82px;
+  margin-top: 5px;
+}
+
+.mkdf-block-quote-holder blockquote svg.mkdf-blockquote {
+  float: left;
+  width: 55px;
+  height: 65px;
+}
+
+.mkdf-block-quote-holder blockquote svg.mkdf-blockquote path {
+  fill: #f04336;
+}
+
+/* ==========================================================================
+   Block Quote shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Button shortcode style - begin
+   ========================================================================== */
+.mkdf-btn {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: auto;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  line-height: 1.2em;
+  font-weight: 700;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-position 0.3s, -webkit-transform 0.3s cubic-bezier(0.19, 0.54, 0.25, 1);
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-position 0.3s, -webkit-transform 0.3s cubic-bezier(0.19, 0.54, 0.25, 1);
+  -o-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, transform 0.3s cubic-bezier(0.19, 0.54, 0.25, 1), background-position 0.3s;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, transform 0.3s cubic-bezier(0.19, 0.54, 0.25, 1), background-position 0.3s;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, transform 0.3s cubic-bezier(0.19, 0.54, 0.25, 1), background-position 0.3s, -webkit-transform 0.3s cubic-bezier(0.19, 0.54, 0.25, 1);
+  border-radius: 4px;
+  padding: 14px 36px;
+  cursor: pointer;
+}
+
+.mkdf-btn.mkdf-btn-simple {
+  padding: 0 !important;
+  color: #f04336;
+  font-size: 18px;
+  background-color: transparent;
+  border: 0;
+  vertical-align: middle;
+}
+
+.mkdf-btn.mkdf-btn-simple .mkdf-btn-text {
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 5;
+  position: relative;
+  padding-right: 3px;
+}
+
+.mkdf-btn.mkdf-btn-simple:not(.mkdf-btn-custom-hover-color):hover {
+  color: #f04336 !important;
+}
+
+.mkdf-btn.mkdf-btn-simple:not(.mkdf-btn-custom-hover-bg):hover {
+  background-color: transparent !important;
+}
+
+.mkdf-btn.mkdf-btn-simple:not(.mkdf-btn-custom-border-hover):hover {
+  border-color: transparent !important;
+}
+
+.mkdf-btn.mkdf-btn-simple:hover svg {
+  -webkit-animation: mkdf-animate-simple-button .6s forwards;
+  animation: mkdf-animate-simple-button .6s forwards;
+}
+
+.mkdf-btn.mkdf-btn-simple:hover svg path:nth-child(1) {
+  -webkit-animation: mkdf-animate-simple-button-paw .35s;
+  animation: mkdf-animate-simple-button-paw .35s;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.mkdf-btn.mkdf-btn-simple:hover svg path:nth-child(2) {
+  -webkit-animation: mkdf-animate-simple-button-paw .35s;
+  animation: mkdf-animate-simple-button-paw .35s;
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+
+.mkdf-btn.mkdf-btn-simple:hover svg path:nth-child(3) {
+  -webkit-animation: mkdf-animate-simple-button-paw .35s;
+  animation: mkdf-animate-simple-button-paw .35s;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.mkdf-btn.mkdf-btn-simple:hover svg path:nth-child(4) {
+  -webkit-animation: mkdf-animate-simple-button-paw .35s;
+  animation: mkdf-animate-simple-button-paw .35s;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.mkdf-btn.mkdf-btn-simple:hover svg path:nth-child(5) {
+  -webkit-animation: mkdf-animate-simple-button-paw .35s;
+  animation: mkdf-animate-simple-button-paw .35s;
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+@-webkit-keyframes mkdf-animate-simple-button-paw {
+  0%, 100% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  50% {
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+  }
+}
+
+@keyframes mkdf-animate-simple-button-paw {
+  0%, 100% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  50% {
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+  }
+}
+
+@-webkit-keyframes mkdf-animate-simple-button {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+}
+
+@keyframes mkdf-animate-simple-button {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+}
+
+.mkdf-btn.mkdf-btn-simple svg.mkdf-paw {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.mkdf-btn.mkdf-btn-simple svg.mkdf-paw path {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+}
+
+.mkdf-btn.mkdf-btn-solid {
+  color: #fff;
+  background-color: #f04336;
+  border: 1px solid transparent;
+  overflow: hidden;
+}
+
+.mkdf-btn.mkdf-btn-solid .mkdf-btn-text {
+  z-index: 5;
+  position: relative;
+}
+
+.mkdf-btn.mkdf-btn-solid:hover svg path:nth-child(1) {
+  -webkit-animation: mkdf-animate-solid-button-paw .35s;
+  animation: mkdf-animate-solid-button-paw .35s;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.mkdf-btn.mkdf-btn-solid:hover svg path:nth-child(2) {
+  -webkit-animation: mkdf-animate-solid-button-paw .35s;
+  animation: mkdf-animate-solid-button-paw .35s;
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+
+.mkdf-btn.mkdf-btn-solid:hover svg path:nth-child(3) {
+  -webkit-animation: mkdf-animate-solid-button-paw .35s;
+  animation: mkdf-animate-solid-button-paw .35s;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.mkdf-btn.mkdf-btn-solid:hover svg path:nth-child(4) {
+  -webkit-animation: mkdf-animate-solid-button-paw .35s;
+  animation: mkdf-animate-solid-button-paw .35s;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.mkdf-btn.mkdf-btn-solid:hover svg path:nth-child(5) {
+  -webkit-animation: mkdf-animate-solid-button-paw .35s;
+  animation: mkdf-animate-solid-button-paw .35s;
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+@-webkit-keyframes mkdf-animate-solid-button-paw {
+  0%, 100% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  50% {
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+  }
+}
+
+@keyframes mkdf-animate-solid-button-paw {
+  0%, 100% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  50% {
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+  }
+}
+
+.mkdf-btn.mkdf-btn-outline {
+  color: #f04336;
+  background-color: transparent;
+  border: 2px solid #f04336;
+}
+
+.mkdf-btn.mkdf-btn-outline:not(.mkdf-btn-custom-hover-color):hover {
+  color: #fff !important;
+}
+
+.mkdf-btn.mkdf-btn-outline:not(.mkdf-btn-custom-hover-bg):hover {
+  background-color: #f04336 !important;
+}
+
+.mkdf-btn.mkdf-btn-outline:not(.mkdf-btn-custom-border-hover):hover {
+  border-color: #f04336 !important;
+}
+
+.mkdf-btn.mkdf-btn-small {
+  padding: 12px 24px;
+}
+
+.mkdf-btn.mkdf-btn-large {
+  padding: 17px 48px;
+}
+
+.mkdf-btn.mkdf-btn-huge {
+  padding: 20px 60px;
+}
+
+.mkdf-btn.mkdf-btn-icon > i,
+.mkdf-btn.mkdf-btn-icon > span:not(.mkdf-btn-text) {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 0 0 4px;
+  font-size: 1.142857142857143em;
+  line-height: inherit;
+}
+
+.mkdf-btn.mkdf-btn-icon > i:before,
+.mkdf-btn.mkdf-btn-icon > span:not(.mkdf-btn-text):before {
+  display: block;
+  line-height: inherit;
+}
+
+/* ==========================================================================
+   Button shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Call To Action shortcode style - begin
+   ========================================================================== */
+.mkdf-call-to-action-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  /***** Layout Style - begin *****/
+  /***** Layout Style - end *****/
+  /***** Columns Space - begin *****/
+  /***** Columns Space - end *****/
+}
+
+.mkdf-call-to-action-holder .mkdf-cta-text-holder,
+.mkdf-call-to-action-holder .mkdf-cta-button-holder {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.mkdf-call-to-action-holder .mkdf-cta-text-holder h1, .mkdf-call-to-action-holder .mkdf-cta-text-holder h2, .mkdf-call-to-action-holder .mkdf-cta-text-holder h3, .mkdf-call-to-action-holder .mkdf-cta-text-holder h4, .mkdf-call-to-action-holder .mkdf-cta-text-holder h5, .mkdf-call-to-action-holder .mkdf-cta-text-holder h6 {
+  margin: 0;
+}
+
+.mkdf-call-to-action-holder .mkdf-cta-button-holder .mkdf-btn {
+  white-space: nowrap;
+}
+
+.mkdf-call-to-action-holder.mkdf-normal-layout .mkdf-cta-inner {
+  display: table;
+}
+
+.mkdf-call-to-action-holder.mkdf-normal-layout:not(.mkdf-content-in-grid) .mkdf-cta-inner {
+  width: 100%;
+}
+
+.mkdf-call-to-action-holder.mkdf-normal-layout .mkdf-cta-text-holder,
+.mkdf-call-to-action-holder.mkdf-normal-layout .mkdf-cta-button-holder {
+  display: table-cell;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.mkdf-call-to-action-holder.mkdf-normal-layout .mkdf-cta-button-holder {
+  text-align: right;
+}
+
+.mkdf-call-to-action-holder.mkdf-simple-layout .mkdf-cta-inner {
+  text-align: center;
+}
+
+.mkdf-call-to-action-holder.mkdf-simple-layout .mkdf-cta-text-holder,
+.mkdf-call-to-action-holder.mkdf-simple-layout .mkdf-cta-button-holder {
+  width: 100%;
+}
+
+.mkdf-call-to-action-holder.mkdf-simple-layout .mkdf-cta-button-holder {
+  margin: 28px 0 0;
+}
+
+.mkdf-call-to-action-holder.mkdf-two-halves-columns .mkdf-cta-text-holder,
+.mkdf-call-to-action-holder.mkdf-two-halves-columns .mkdf-cta-button-holder {
+  width: 50%;
+}
+
+.mkdf-call-to-action-holder.mkdf-two-thirds-columns .mkdf-cta-text-holder {
+  width: 66.66666666666667%;
+}
+
+.mkdf-call-to-action-holder.mkdf-two-thirds-columns .mkdf-cta-button-holder {
+  width: 33.33333333333333%;
+}
+
+.mkdf-call-to-action-holder.mkdf-three-quarters-columns .mkdf-cta-text-holder {
+  width: 75%;
+}
+
+.mkdf-call-to-action-holder.mkdf-three-quarters-columns .mkdf-cta-button-holder {
+  width: 25%;
+}
+
+.mkdf-call-to-action-holder.mkdf-four-fifths-columns .mkdf-cta-text-holder {
+  width: 80%;
+}
+
+.mkdf-call-to-action-holder.mkdf-four-fifths-columns .mkdf-cta-button-holder {
+  width: 20%;
+}
+
+/* ==========================================================================
+   Call To Action shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Clients Carousel shortcode style - begin
+   ========================================================================== */
+.mkdf-clients-carousel-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.mkdf-clients-carousel-holder .mkdf-cc-inner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.mkdf-clients-carousel-holder .mkdf-cc-item {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.touch .mkdf-clients-carousel-holder .mkdf-cc-item {
+  cursor: pointer;
+}
+
+.mkdf-clients-carousel-holder .mkdf-cc-item img {
+  display: block;
+}
+
+.mkdf-clients-carousel-holder .mkdf-cc-link {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/***** Hover Types - begin *****/
+.mkdf-cc-hover-switch-images .mkdf-cc-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.mkdf-cc-hover-switch-images .mkdf-cc-item .mkdf-cc-link .mkdf-active-hover, .mkdf-cc-hover-switch-images .mkdf-cc-item.mkdf-cci-link .mkdf-active-hover, .mkdf-cc-hover-switch-images .mkdf-cc-item.mkdf-cci-no-link .mkdf-active-hover {
+  -webkit-transition: opacity .2s ease-out;
+  -o-transition: opacity .2s ease-out;
+  transition: opacity .2s ease-out;
+  display: block;
+  clip-path: circle(0);
+  -webkit-clip-path: circle(0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
+}
+
+.mkdf-cc-hover-switch-images .mkdf-cc-item .mkdf-cc-link .mkdf-active-hover .mkdf-active-hover-middle, .mkdf-cc-hover-switch-images .mkdf-cc-item.mkdf-cci-link .mkdf-active-hover .mkdf-active-hover-middle, .mkdf-cc-hover-switch-images .mkdf-cc-item.mkdf-cci-no-link .mkdf-active-hover .mkdf-active-hover-middle {
+  position: absolute;
+  top: 0;
+  left: 8px;
+  width: calc(100% - 16px);
+  height: 100%;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.mkdf-cc-hover-switch-images .mkdf-cc-item .mkdf-cc-link .mkdf-active-hover svg, .mkdf-cc-hover-switch-images .mkdf-cc-item.mkdf-cci-link .mkdf-active-hover svg, .mkdf-cc-hover-switch-images .mkdf-cc-item.mkdf-cci-no-link .mkdf-active-hover svg {
+  position: absolute;
+  top: 0;
+}
+
+.mkdf-cc-hover-switch-images .mkdf-cc-item .mkdf-cc-link .mkdf-active-hover svg path, .mkdf-cc-hover-switch-images .mkdf-cc-item.mkdf-cci-link .mkdf-active-hover svg path, .mkdf-cc-hover-switch-images .mkdf-cc-item.mkdf-cci-no-link .mkdf-active-hover svg path {
+  fill: #fff;
+  stroke: #fff;
+}
+
+.mkdf-cc-hover-switch-images .mkdf-cc-item .mkdf-cc-link .mkdf-active-hover svg.mkdf-active-hover-left, .mkdf-cc-hover-switch-images .mkdf-cc-item.mkdf-cci-link .mkdf-active-hover svg.mkdf-active-hover-left, .mkdf-cc-hover-switch-images .mkdf-cc-item.mkdf-cci-no-link .mkdf-active-hover svg.mkdf-active-hover-left {
+  left: 0;
+}
+
+.mkdf-cc-hover-switch-images .mkdf-cc-item .mkdf-cc-link .mkdf-active-hover svg.mkdf-active-hover-right, .mkdf-cc-hover-switch-images .mkdf-cc-item.mkdf-cci-link .mkdf-active-hover svg.mkdf-active-hover-right, .mkdf-cc-hover-switch-images .mkdf-cc-item.mkdf-cci-no-link .mkdf-active-hover svg.mkdf-active-hover-right {
+  right: 0;
+}
+
+.mkdf-safari .mkdf-cc-hover-switch-images .mkdf-cc-item .mkdf-cc-link .mkdf-active-hover, .mkdf-edge .mkdf-cc-hover-switch-images .mkdf-cc-item .mkdf-cc-link .mkdf-active-hover, .mkdf-ms-explorer .mkdf-cc-hover-switch-images .mkdf-cc-item .mkdf-cc-link .mkdf-active-hover, .mkdf-safari .mkdf-cc-hover-switch-images .mkdf-cc-item.mkdf-cci-link .mkdf-active-hover, .mkdf-edge .mkdf-cc-hover-switch-images .mkdf-cc-item.mkdf-cci-link .mkdf-active-hover, .mkdf-ms-explorer .mkdf-cc-hover-switch-images .mkdf-cc-item.mkdf-cci-link .mkdf-active-hover, .mkdf-safari .mkdf-cc-hover-switch-images .mkdf-cc-item.mkdf-cci-no-link .mkdf-active-hover, .mkdf-edge .mkdf-cc-hover-switch-images .mkdf-cc-item.mkdf-cci-no-link .mkdf-active-hover, .mkdf-ms-explorer .mkdf-cc-hover-switch-images .mkdf-cc-item.mkdf-cci-no-link .mkdf-active-hover {
+  clip-path: circle(150%);
+  -webkit-clip-path: circle(150%);
+  opacity: 0;
+}
+
+.mkdf-cc-hover-switch-images .mkdf-cc-item .mkdf-cc-link .mkdf-active-hover svg.mkdf-active-hover-left, .mkdf-cc-hover-switch-images .mkdf-cc-item.mkdf-cci-link .mkdf-active-hover svg.mkdf-active-hover-left, .mkdf-cc-hover-switch-images .mkdf-cc-item.mkdf-cci-no-link .mkdf-active-hover svg.mkdf-active-hover-left {
+  height: 101%;
+  width: 11%;
+}
+
+.mkdf-cc-hover-switch-images .mkdf-cc-item .mkdf-cc-link .mkdf-active-hover svg.mkdf-active-hover-right, .mkdf-cc-hover-switch-images .mkdf-cc-item.mkdf-cci-link .mkdf-active-hover svg.mkdf-active-hover-right, .mkdf-cc-hover-switch-images .mkdf-cc-item.mkdf-cci-no-link .mkdf-active-hover svg.mkdf-active-hover-right {
+  right: -12px;
+  height: 101%;
+  width: 14%;
+}
+
+.mkdf-cc-hover-switch-images .mkdf-cc-item .mkdf-cc-link img, .mkdf-cc-hover-switch-images .mkdf-cc-item.mkdf-cci-link img, .mkdf-cc-hover-switch-images .mkdf-cc-item.mkdf-cci-no-link img {
+  z-index: 12;
+}
+
+.mkdf-cc-hover-switch-images .mkdf-cc-item .mkdf-cc-link:hover .mkdf-active-hover, .mkdf-cc-hover-switch-images .mkdf-cc-item.mkdf-cci-link:hover .mkdf-active-hover, .mkdf-cc-hover-switch-images .mkdf-cc-item.mkdf-cci-no-link:hover .mkdf-active-hover {
+  clip-path: circle(150%);
+  -webkit-clip-path: circle(150%);
+  -webkit-transition: 1.2s;
+  -o-transition: 1.2s;
+  transition: 1.2s;
+}
+
+.mkdf-safari .mkdf-cc-hover-switch-images .mkdf-cc-item .mkdf-cc-link:hover .mkdf-active-hover, .mkdf-edge .mkdf-cc-hover-switch-images .mkdf-cc-item .mkdf-cc-link:hover .mkdf-active-hover, .mkdf-ms-explorer .mkdf-cc-hover-switch-images .mkdf-cc-item .mkdf-cc-link:hover .mkdf-active-hover, .mkdf-safari .mkdf-cc-hover-switch-images .mkdf-cc-item.mkdf-cci-link:hover .mkdf-active-hover, .mkdf-edge .mkdf-cc-hover-switch-images .mkdf-cc-item.mkdf-cci-link:hover .mkdf-active-hover, .mkdf-ms-explorer .mkdf-cc-hover-switch-images .mkdf-cc-item.mkdf-cci-link:hover .mkdf-active-hover, .mkdf-safari .mkdf-cc-hover-switch-images .mkdf-cc-item.mkdf-cci-no-link:hover .mkdf-active-hover, .mkdf-edge .mkdf-cc-hover-switch-images .mkdf-cc-item.mkdf-cci-no-link:hover .mkdf-active-hover, .mkdf-ms-explorer .mkdf-cc-hover-switch-images .mkdf-cc-item.mkdf-cci-no-link:hover .mkdf-active-hover {
+  opacity: 1;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.mkdf-cc-hover-switch-images .mkdf-cc-item.mkdf-cci-has-link a:hover .mkdf-cc-image {
+  opacity: 0;
+}
+
+.mkdf-cc-hover-switch-images .mkdf-cc-item.mkdf-cci-has-link a:hover .mkdf-cc-hover-image {
+  opacity: 1;
+}
+
+.mkdf-cc-hover-switch-images .mkdf-cc-item.mkdf-cci-no-link:hover .mkdf-cc-image {
+  opacity: 0;
+}
+
+.mkdf-cc-hover-switch-images .mkdf-cc-item.mkdf-cci-no-link:hover .mkdf-cc-hover-image {
+  opacity: 1;
+}
+
+.mkdf-cc-hover-switch-images .mkdf-cc-item.mkdf-cci-no-link .mkdf-cc-hover-image {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.mkdf-cc-hover-switch-images .mkdf-cc-item .mkdf-cc-image {
+  width: auto;
+  opacity: 1;
+  will-change: opacity;
+  -webkit-transition: opacity .15s ease-out;
+  -o-transition: opacity .15s ease-out;
+  transition: opacity .15s ease-out;
+}
+
+.mkdf-cc-hover-switch-images .mkdf-cc-item .mkdf-cc-hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  opacity: 0;
+  will-change: opacity;
+  -webkit-transition: opacity .15s ease-out;
+  -o-transition: opacity .15s ease-out;
+  transition: opacity .15s ease-out;
+}
+
+.mkdf-cc-hover-roll-over .mkdf-cc-item {
+  overflow: hidden;
+}
+
+.mkdf-cc-hover-roll-over .mkdf-cc-item.mkdf-cci-has-link a:hover .mkdf-cc-image {
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+.mkdf-cc-hover-roll-over .mkdf-cc-item.mkdf-cci-has-link a:hover .mkdf-cc-hover-image {
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+
+.mkdf-cc-hover-roll-over .mkdf-cc-item.mkdf-cci-no-link:hover .mkdf-cc-image {
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+.mkdf-cc-hover-roll-over .mkdf-cc-item.mkdf-cci-no-link:hover .mkdf-cc-hover-image {
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+
+.mkdf-cc-hover-roll-over .mkdf-cc-item .mkdf-cc-image {
+  position: relative;
+  display: block;
+  width: auto;
+  margin: 0 auto;
+  -webkit-transition: -webkit-transform .4s ease;
+  transition: -webkit-transform .4s ease;
+  -o-transition: transform .4s ease;
+  transition: transform .4s ease;
+  transition: transform .4s ease, -webkit-transform .4s ease;
+}
+
+.mkdf-cc-hover-roll-over .mkdf-cc-item .mkdf-cc-hover-image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: auto;
+  -webkit-transform: translate(-50%, -100%);
+  -ms-transform: translate(-50%, -100%);
+  transform: translate(-50%, -100%);
+  -webkit-transition: -webkit-transform .4s ease;
+  transition: -webkit-transform .4s ease;
+  -o-transition: transform .4s ease;
+  transition: transform .4s ease;
+  transition: transform .4s ease, -webkit-transform .4s ease;
+}
+
+/***** Hover Types - end *****/
+/* ==========================================================================
+   Clients Carousel shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   clients Holder shortcode style - begin
+   ========================================================================== */
+.mkdf-clients-grid-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.mkdf-clients-grid-holder.mkdf-cg-alignment-left {
+  text-align: left;
+}
+
+.mkdf-clients-grid-holder.mkdf-cg-alignment-right {
+  text-align: right;
+}
+
+.mkdf-clients-grid-holder .mkdf-cc-link {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* ==========================================================================
+   clients Holder shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Countdown shortcode style - begin
+   ========================================================================== */
+.mkdf-countdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.mkdf-countdown.mkdf-light-skin .countdown-row .countdown-section .countdown-amount,
+.mkdf-countdown.mkdf-light-skin .countdown-row .countdown-section .countdown-period {
+  color: #fff;
+}
+
+.mkdf-countdown .countdown-rtl {
+  direction: rtl;
+}
+
+.mkdf-countdown .countdown-row {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+  clear: both;
+}
+
+.mkdf-countdown .countdown-row.countdown-show1 .countdown-section {
+  width: 100%;
+}
+
+.mkdf-countdown .countdown-row.countdown-show2 .countdown-section {
+  width: 50%;
+}
+
+.mkdf-countdown .countdown-row.countdown-show3 .countdown-section {
+  width: 33.33333%;
+}
+
+.mkdf-countdown .countdown-row.countdown-show4 .countdown-section {
+  width: 25%;
+}
+
+.mkdf-countdown .countdown-row.countdown-show5 .countdown-section {
+  width: 20%;
+}
+
+.mkdf-countdown .countdown-row.countdown-show6 .countdown-section {
+  width: 16.66667%;
+}
+
+.mkdf-countdown .countdown-row .countdown-section {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  padding: 0 5px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.mkdf-countdown .countdown-row .countdown-section .countdown-amount {
+  position: relative;
+  display: block;
+  color: #424242;
+  font-size: 72px;
+  line-height: 1em;
+  font-weight: 600;
+}
+
+.mkdf-countdown .countdown-row .countdown-section .countdown-period {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* ==========================================================================
+   Countdown shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Counter shortcode style - begin
+   ========================================================================== */
+.mkdf-counter-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in;
+  -o-transition: opacity 0.2s ease-in;
+  transition: opacity 0.2s ease-in;
+}
+
+.mkdf-counter-holder .mkdf-counter-inner {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.mkdf-counter-holder .mkdf-counter {
+  height: 1em;
+  display: inline-block !important;
+  vertical-align: middle;
+  color: #424242;
+  font-size: 48px;
+  line-height: 1em;
+  font-weight: 600;
+  overflow: hidden;
+}
+
+.mkdf-counter-holder .mkdf-counter-title {
+  margin: 5px 0 0;
+}
+
+.mkdf-counter-holder .mkdf-counter-text {
+  margin: 14px 0 0;
+}
+
+/* ==========================================================================
+   Counter shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Custom Font shortcode style - begin
+   ========================================================================== */
+.mkdf-custom-font-holder .mkdf-cf-typed-wrap {
+  width: 0;
+  white-space: nowrap;
+}
+
+.mkdf-custom-font-holder .mkdf-cf-typed {
+  display: inline-block;
+}
+
+.mkdf-custom-font-holder .mkdf-cf-typed span {
+  display: none;
+}
+
+.mkdf-custom-font-holder .mkdf-cf-typed ~ .typed-cursor {
+  display: inline-block;
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+  50% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+  100% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+  50% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+  100% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+}
+
+.mkdf-custom-font-holder.mkdf-cf-highlight-effect .mkdf-cf-highlight-title-holder {
+  -webkit-transition: opacity .2s ease-out;
+  -o-transition: opacity .2s ease-out;
+  transition: opacity .2s ease-out;
+  position: relative;
+  display: inline-block;
+}
+
+.mkdf-custom-font-holder.mkdf-cf-highlight-effect .mkdf-cf-highlight-title-holder .mkdf-active-hover-middle {
+  position: absolute;
+  top: 0;
+  left: 8px;
+  width: calc(100% - 16px);
+  height: 100%;
+  border-radius: 4px;
+  background-color: currentColor;
+}
+
+.mkdf-custom-font-holder.mkdf-cf-highlight-effect .mkdf-cf-highlight-title-holder svg {
+  position: absolute;
+  top: 0;
+}
+
+.mkdf-custom-font-holder.mkdf-cf-highlight-effect .mkdf-cf-highlight-title-holder svg path {
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+.mkdf-custom-font-holder.mkdf-cf-highlight-effect .mkdf-cf-highlight-title-holder svg.mkdf-active-hover-left {
+  left: 0;
+}
+
+.mkdf-custom-font-holder.mkdf-cf-highlight-effect .mkdf-cf-highlight-title-holder svg.mkdf-active-hover-right {
+  right: 0;
+}
+
+.mkdf-custom-font-holder.mkdf-cf-highlight-effect .mkdf-cf-highlight-title-holder .mkdf-cf-highlight-title {
+  padding: 0 10px;
+  position: relative;
+  color: currentColor;
+  z-index: 1;
+}
+
+/* ==========================================================================
+   Custom Font shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Dropcaps shortcode style - begin
+   ========================================================================== */
+.mkdf-dropcaps {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  float: left;
+  line-height: 42px;
+  font-size: 42px;
+  color: #999;
+  font-weight: 300;
+  text-align: center;
+  margin: 0 7px 0 0;
+}
+
+.mkdf-dropcaps.mkdf-square, .mkdf-dropcaps.mkdf-circle {
+  height: 35px;
+  width: 35px;
+  font-size: 22px;
+  line-height: 35px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #424242;
+  margin: 6px 9px 0 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.mkdf-dropcaps.mkdf-circle {
+  border-radius: 3em;
+}
+
+/* ==========================================================================
+   Dropcaps shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Elements Holder shortcode style - begin
+   ========================================================================== */
+.mkdf-elements-holder {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+}
+
+.mkdf-elements-holder.mkdf-eh-full-height {
+  height: 100%;
+}
+
+.mkdf-elements-holder.mkdf-ehi-float .mkdf-eh-item {
+  float: left;
+}
+
+.mkdf-elements-holder.one-third-two-thirds .mkdf-eh-item:first-child {
+  width: 33.33%;
+}
+
+.mkdf-elements-holder.one-third-two-thirds .mkdf-eh-item:last-child {
+  width: 66.66%;
+}
+
+.mkdf-elements-holder.two-thirds-one-third .mkdf-eh-item:first-child {
+  width: 66.66%;
+}
+
+.mkdf-elements-holder.two-thirds-one-third .mkdf-eh-item:last-child {
+  width: 33.33%;
+}
+
+.mkdf-elements-holder.mkdf-two-columns .mkdf-eh-item {
+  width: 50%;
+}
+
+.mkdf-elements-holder.mkdf-three-columns .mkdf-eh-item {
+  width: 33.33333%;
+}
+
+.mkdf-elements-holder.mkdf-four-columns .mkdf-eh-item {
+  width: 25%;
+}
+
+.mkdf-elements-holder.mkdf-five-columns .mkdf-eh-item {
+  width: 20%;
+}
+
+.mkdf-elements-holder.mkdf-six-columns .mkdf-eh-item {
+  width: 16.66667%;
+}
+
+.mkdf-elements-holder .mkdf-eh-item {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.mkdf-elements-holder .mkdf-eh-item.mkdf-vertical-alignment-top {
+  vertical-align: top;
+}
+
+.mkdf-elements-holder .mkdf-eh-item.mkdf-vertical-alignment-bottom {
+  vertical-align: bottom;
+}
+
+.mkdf-elements-holder .mkdf-eh-item.mkdf-horizontal-alignment-center {
+  text-align: center;
+}
+
+.mkdf-elements-holder .mkdf-eh-item.mkdf-horizontal-alignment-right {
+  text-align: right;
+}
+
+.mkdf-elements-holder .mkdf-eh-item .mkdf-elements-holder-item-inner {
+  width: 100%;
+}
+
+.mkdf-elements-holder .mkdf-eh-item.rounded-corners {
+  border-radius: 6px;
+}
+
+.mkdf-elements-holder .mkdf-ehi-content {
+  padding: 0 20px;
+}
+
+/* ==========================================================================
+   Elements Holder shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Google Map shortcode style - begin
+   ========================================================================== */
+.mkdf-google-map-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.mkdf-google-map-holder .mkdf-google-map-direction {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 0 8px;
+  font-size: 13px;
+  line-height: 24px;
+  color: #8f9093;
+  background-color: #fff;
+  z-index: 999;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.mkdf-google-map-holder .mkdf-google-map-direction:hover {
+  color: #424242;
+}
+
+.mkdf-google-map-holder .mkdf-google-map {
+  display: block;
+  width: 100%;
+  height: 300px;
+}
+
+.mkdf-google-map-holder .mkdf-google-map iframe,
+.mkdf-google-map-holder .mkdf-google-map object,
+.mkdf-google-map-holder .mkdf-google-map embed {
+  width: 100%;
+  display: block;
+}
+
+.mkdf-google-map-holder .mkdf-google-map img {
+  max-width: none;
+}
+
+.mkdf-google-map-holder .mkdf-snazzy-map {
+  display: none;
+}
+
+.mkdf-google-map-holder .mkdf-google-map-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 1000;
+}
+
+/* ==========================================================================
+   Google Map shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Icon List Item shortcode style - begin
+   ========================================================================== */
+.mkdf-icon-list-holder {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  height: auto;
+  width: 100%;
+  margin-bottom: 13px;
+}
+
+.mkdf-icon-list-holder .mkdf-il-icon-holder,
+.mkdf-icon-list-holder .mkdf-il-text {
+  position: relative;
+  display: table-cell;
+  vertical-align: top;
+}
+
+.mkdf-icon-list-holder .mkdf-il-icon-holder {
+  width: 1%;
+}
+
+.mkdf-icon-list-holder .mkdf-il-icon-holder > * {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  color: #f04336;
+  font-size: 20px;
+  line-height: inherit;
+}
+
+.mkdf-icon-list-holder .mkdf-il-icon-holder > *:before {
+  display: block;
+  line-height: inherit;
+}
+
+.mkdf-icon-list-holder .mkdf-il-text {
+  width: 99%;
+  padding: 0 0 0 23px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* ==========================================================================
+   Icon List Item shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Icon With Text shortcode style - begin
+   ========================================================================== */
+.mkdf-iwt {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.mkdf-iwt .mkdf-iwt-icon a {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.mkdf-iwt .mkdf-iwt-icon a .mkdf-iwt-custom-hover-icon {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  -webkit-transition: opacity .2s ease-out;
+  -o-transition: opacity .2s ease-out;
+  transition: opacity .2s ease-out;
+}
+
+.mkdf-iwt .mkdf-iwt-icon a .mkdf-iwt-custom-icon {
+  -webkit-transition: opacity .2s ease-out;
+  -o-transition: opacity .2s ease-out;
+  transition: opacity .2s ease-out;
+}
+
+.mkdf-iwt .mkdf-iwt-icon a:hover .mkdf-iwt-custom-icon {
+  opacity: 0;
+}
+
+.mkdf-iwt .mkdf-iwt-icon a:hover .mkdf-iwt-custom-hover-icon {
+  opacity: 1;
+}
+
+.mkdf-iwt .mkdf-iwt-icon .mkdf-icon-shortcode {
+  line-height: 1;
+}
+
+.mkdf-iwt .mkdf-iwt-icon .mkdf-icon-shortcode.mkdf-circle, .mkdf-iwt .mkdf-iwt-icon .mkdf-icon-shortcode.mkdf-square, .mkdf-iwt .mkdf-iwt-icon .mkdf-icon-shortcode.mkdf-dropcaps.mkdf-circle {
+  line-height: 2;
+}
+
+.mkdf-iwt .mkdf-iwt-icon > .mkdf-iwt-custom-icon-holder .mkdf-iwt-custom-hover-icon {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+}
+
+.mkdf-iwt .mkdf-iwt-icon > .mkdf-iwt-custom-icon-holder:hover .mkdf-iwt-custom-icon {
+  opacity: 0;
+}
+
+.mkdf-iwt .mkdf-iwt-icon > .mkdf-iwt-custom-icon-holder:hover .mkdf-iwt-custom-hover-icon {
+  opacity: 1;
+}
+
+.mkdf-iwt .mkdf-iwt-content a {
+  margin-top: 11px;
+}
+
+.mkdf-iwt .mkdf-iwt-title {
+  margin: 0;
+  line-height: 1.2em;
+  margin-top: 13px;
+}
+
+.mkdf-iwt .mkdf-iwt-title a {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.mkdf-iwt .mkdf-iwt-title-text {
+  display: block;
+}
+
+.mkdf-iwt.mkdf-iwt-icon-left {
+  width: auto;
+  margin-bottom: 30px;
+}
+
+.mkdf-iwt.mkdf-iwt-icon-left .mkdf-iwt-icon,
+.mkdf-iwt.mkdf-iwt-icon-left .mkdf-iwt-content {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.mkdf-iwt.mkdf-iwt-icon-left .mkdf-iwt-icon {
+  position: relative;
+  top: 1px;
+}
+
+.mkdf-iwt.mkdf-iwt-icon-left .mkdf-iwt-content {
+  padding: 0 0 0 13px;
+}
+
+.mkdf-iwt.mkdf-iwt-icon-left-from-title {
+  margin-bottom: 10px;
+}
+
+.mkdf-iwt.mkdf-iwt-icon-left-from-title .mkdf-iwt-title a:hover .mkdf-iwt-custom-icon-holder .mkdf-iwt-custom-icon {
+  opacity: 0;
+}
+
+.mkdf-iwt.mkdf-iwt-icon-left-from-title .mkdf-iwt-title a:hover .mkdf-iwt-custom-icon-holder .mkdf-iwt-custom-hover-icon {
+  opacity: 1;
+}
+
+.mkdf-iwt.mkdf-iwt-icon-left-from-title .mkdf-iwt-title > .mkdf-iwt-custom-icon-holder:hover .mkdf-iwt-custom-icon {
+  opacity: 0;
+}
+
+.mkdf-iwt.mkdf-iwt-icon-left-from-title .mkdf-iwt-title > .mkdf-iwt-custom-icon-holder:hover .mkdf-iwt-custom-hover-icon {
+  opacity: 1;
+}
+
+.mkdf-iwt.mkdf-iwt-icon-left-from-title .mkdf-iwt-title-text,
+.mkdf-iwt.mkdf-iwt-icon-left-from-title .mkdf-iwt-custom-icon-holder,
+.mkdf-iwt.mkdf-iwt-icon-left-from-title .mkdf-iwt-icon {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.mkdf-iwt.mkdf-iwt-icon-left-from-title .mkdf-iwt-icon .mkdf-icon-element {
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+.mkdf-iwt.mkdf-iwt-icon-left-from-title .mkdf-iwt-title-text {
+  padding: 0 0 0 17px;
+}
+
+.mkdf-iwt.mkdf-iwt-icon-left-from-title .mkdf-iwt-custom-icon-holder .mkdf-iwt-custom-hover-icon {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+}
+
+.mkdf-iwt.mkdf-iwt-icon-top {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.mkdf-iwt.mkdf-iwt-icon-top .mkdf-iwt-custom-icon-holder .mkdf-iwt-custom-hover-icon {
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  left: 50%;
+  width: 100%;
+  height: auto;
+}
+
+/* ==========================================================================
+   Icon With Text shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Icon shortcode style - begin
+   ========================================================================== */
+.mkdf-icon-shortcode {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.1em;
+}
+
+.mkdf-icon-shortcode.mkdf-circle, .mkdf-icon-shortcode.mkdf-square, .mkdf-icon-shortcode.mkdf-dropcaps.mkdf-circle {
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  text-align: center;
+  background-color: #f04336;
+  -webkit-transition: background-color .15s ease-in-out, border-color .15s ease-in-out;
+  -o-transition: background-color .15s ease-in-out, border-color .15s ease-in-out;
+  transition: background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+.mkdf-icon-shortcode.mkdf-circle a, .mkdf-icon-shortcode.mkdf-square a, .mkdf-icon-shortcode.mkdf-dropcaps.mkdf-circle a {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  height: 100%;
+}
+
+.mkdf-icon-shortcode.mkdf-circle .mkdf-icon-element, .mkdf-icon-shortcode.mkdf-square .mkdf-icon-element, .mkdf-icon-shortcode.mkdf-dropcaps.mkdf-circle .mkdf-icon-element {
+  color: #fff;
+  line-height: inherit;
+}
+
+.mkdf-icon-shortcode.mkdf-circle {
+  border-radius: 50%;
+}
+
+.mkdf-icon-shortcode .mkdf-icon-element {
+  display: block;
+  line-height: inherit;
+  -webkit-transition: color .15s ease-in-out;
+  -o-transition: color .15s ease-in-out;
+  transition: color .15s ease-in-out;
+}
+
+.mkdf-icon-shortcode .mkdf-icon-element:before {
+  display: block;
+  line-height: inherit;
+}
+
+.mkdf-icon-animation-holder {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: -webkit-transform 0.15s ease-in-out;
+  transition: -webkit-transform 0.15s ease-in-out;
+  -o-transition: transform 0.15s ease-in-out;
+  transition: transform 0.15s ease-in-out;
+  transition: transform 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out;
+}
+
+.mkdf-icon-animation-holder.mkdf-icon-animation-show {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.mkdf-icon-tiny {
+  font-size: 1.33333333em;
+  line-height: .75em;
+  vertical-align: -15%;
+}
+
+.mkdf-icon-small {
+  font-size: 2em;
+}
+
+.mkdf-icon-medium {
+  font-size: 3em;
+}
+
+.mkdf-icon-large {
+  font-size: 4em;
+}
+
+.mkdf-icon-huge {
+  font-size: 5em;
+}
+
+/* ==========================================================================
+   Icon shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Image Gallery shortcode style - begin
+   ========================================================================== */
+.mkdf-image-gallery {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  /***** Image Gallery Masonry Style - begin *****/
+  /***** Image Gallery Masonry Style - end *****/
+  /***** Custom Link Behavior Style - begin *****/
+  /***** Custom Link Behavior Style - end *****/
+  /***** Lightbox Behavior Style - begin *****/
+  /***** Lightbox Behavior Style - end *****/
+  /***** Zoom Behavior Style - begin *****/
+  /***** Zoom Behavior Style - end *****/
+  /***** Grayscale Behavior Style - begin *****/
+  /***** Grayscale Behavior Style - end *****/
+}
+
+.mkdf-image-gallery .owl-stage-outer {
+  border-radius: 0;
+}
+
+.mkdf-image-gallery.mkdf-has-shadow .mkdf-ig-image-inner {
+  -webkit-box-shadow: 0 0 4.85px 0.15px rgba(0, 0, 0, 0.09);
+  box-shadow: 0 0 4.85px 0.15px rgba(0, 0, 0, 0.09);
+}
+
+.mkdf-image-gallery.mkdf-has-shadow.mkdf-ig-slider-type .owl-stage-outer, .mkdf-image-gallery.mkdf-has-shadow.mkdf-ig-carousel-type .owl-stage-outer {
+  padding: 0 0 20px;
+}
+
+.mkdf-image-gallery.mkdf-has-shadow.mkdf-ig-slider-type .mkdf-ig-image, .mkdf-image-gallery.mkdf-has-shadow.mkdf-ig-carousel-type .mkdf-ig-image {
+  -webkit-box-shadow: 0 0 4.85px 0.15px rgba(0, 0, 0, 0.09);
+  box-shadow: 0 0 4.85px 0.15px rgba(0, 0, 0, 0.09);
+}
+
+.mkdf-image-gallery .mkdf-ig-image a, .mkdf-image-gallery .mkdf-ig-image img {
+  position: relative;
+  display: block;
+}
+
+.mkdf-image-gallery .mkdf-ig-image-inner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.mkdf-image-gallery .mkdf-ig-slider {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.mkdf-image-gallery.mkdf-ig-masonry-type .mkdf-ig-image.mkdf-fixed-masonry-item .mkdf-ig-image-inner,
+.mkdf-image-gallery.mkdf-ig-masonry-type .mkdf-ig-image.mkdf-fixed-masonry-item a {
+  height: 100%;
+}
+
+.mkdf-image-gallery.mkdf-image-behavior-custom-link .mkdf-ig-image a:hover:after {
+  opacity: 1;
+}
+
+.mkdf-image-gallery.mkdf-image-behavior-custom-link .mkdf-ig-image a:after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: '';
+  background-color: rgba(66, 66, 66, 0.4);
+  opacity: 0;
+  -webkit-transition: opacity .2s ease-in-out;
+  -o-transition: opacity .2s ease-in-out;
+  transition: opacity .2s ease-in-out;
+}
+
+.mkdf-image-gallery.mkdf-image-behavior-lightbox .mkdf-ig-image a:hover:after {
+  opacity: 1;
+}
+
+.mkdf-image-gallery.mkdf-image-behavior-lightbox .mkdf-ig-image a:after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: '';
+  background-color: rgba(66, 66, 66, 0.4);
+  opacity: 0;
+  -webkit-transition: opacity .2s ease-in-out;
+  -o-transition: opacity .2s ease-in-out;
+  transition: opacity .2s ease-in-out;
+}
+
+.touch .mkdf-image-gallery.mkdf-image-behavior-zoom .mkdf-ig-image {
+  cursor: pointer;
+}
+
+.mkdf-image-gallery.mkdf-image-behavior-zoom .mkdf-ig-image:hover img {
+  -webkit-transform: scale(1.04);
+  -ms-transform: scale(1.04);
+  transform: scale(1.04);
+}
+
+.mkdf-image-gallery.mkdf-image-behavior-zoom .mkdf-ig-image .mkdf-ig-image-inner {
+  overflow: hidden;
+}
+
+.mkdf-image-gallery.mkdf-image-behavior-zoom .mkdf-ig-image img {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  transition: -webkit-transform .3s ease-in-out;
+  -o-transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+}
+
+.mkdf-image-gallery.mkdf-image-behavior-grayscale .mkdf-ig-image {
+  overflow: hidden;
+}
+
+.touch .mkdf-image-gallery.mkdf-image-behavior-grayscale .mkdf-ig-image {
+  cursor: pointer;
+}
+
+.mkdf-image-gallery.mkdf-image-behavior-grayscale .mkdf-ig-image:hover img {
+  -webkit-filter: grayscale(0);
+  filter: none;
+}
+
+.mkdf-image-gallery.mkdf-image-behavior-grayscale .mkdf-ig-image img {
+  filter: url("img/desaturate.svg#grayscale");
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: gray;
+  filter: grayscale(100%);
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+/* ==========================================================================
+   Image Gallery shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Image Gallery shortcode style - begin
+   ========================================================================== */
+.mkdf-image-marquee-holder {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.mkdf-image-marquee-holder .mkdf-image-marquee {
+  position: relative;
+  width: 124%;
+  left: -12%;
+}
+
+.mkdf-image-marquee-holder .mkdf-image img {
+  display: block;
+}
+
+.mkdf-image-marquee-holder .mkdf-image.mkdf-original {
+  position: relative;
+}
+
+.mkdf-image-marquee-holder .mkdf-image.mkdf-aux {
+  position: absolute;
+  top: 0;
+}
+
+/* ==========================================================================
+	Image Gallery shortcode style - begin
+	========================================================================== */
+/* ==========================================================================
+   Image With Text shortcode style - begin
+   ========================================================================== */
+.mkdf-image-with-text-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin-bottom: 35px;
+  /***** Custom Link Behavior Style - begin *****/
+  /***** Custom Link Behavior Style - end *****/
+  /***** Lightbox Behavior Style - begin *****/
+  /***** Lightbox Behavior Style - end *****/
+  /***** Zoom Behavior Style - begin *****/
+  /***** Zoom Behavior Style - end *****/
+  /***** Grayscale Behavior Style - begin *****/
+  /***** Grayscale Behavior Style - end *****/
+}
+
+.mkdf-image-with-text-holder.highlight .mkdf-iwt-title-holder {
+  padding: 1px 15px 4px 11px;
+}
+
+.mkdf-image-with-text-holder .mkdf-iwt-title-holder {
+  -webkit-transition: opacity .2s ease-out;
+  -o-transition: opacity .2s ease-out;
+  transition: opacity .2s ease-out;
+  position: relative;
+  display: inline-block;
+  margin-top: 40px;
+}
+
+.mkdf-image-with-text-holder .mkdf-iwt-title-holder .mkdf-active-hover-middle {
+  position: absolute;
+  top: 0;
+  left: 8px;
+  width: calc(100% - 16px);
+  height: 100%;
+  border-radius: 4px;
+  background-color: #f7f7f5;
+}
+
+.mkdf-image-with-text-holder .mkdf-iwt-title-holder svg {
+  position: absolute;
+  top: 0;
+}
+
+.mkdf-image-with-text-holder .mkdf-iwt-title-holder svg path {
+  fill: #f7f7f5;
+  stroke: #f7f7f5;
+}
+
+.mkdf-image-with-text-holder .mkdf-iwt-title-holder svg.mkdf-active-hover-left {
+  left: 0;
+}
+
+.mkdf-image-with-text-holder .mkdf-iwt-title-holder svg.mkdf-active-hover-right {
+  right: 0;
+}
+
+.mkdf-image-with-text-holder .mkdf-iwt-title {
+  position: relative;
+  margin: 0;
+}
+
+.mkdf-image-with-text-holder .mkdf-iwt-title.predefined {
+  font-family: 'Amatic SC', sans-serif;
+  font-size: 35px;
+  line-height: 1em;
+  font-weight: 400;
+  -webkit-transition: color .2s ease-out;
+  -o-transition: color .2s ease-out;
+  transition: color .2s ease-out;
+}
+
+.mkdf-image-with-text-holder svg.mkdf-iwt-paws {
+  width: 228px;
+  height: 147px;
+  position: absolute;
+  top: -148px;
+  right: -193px;
+}
+
+.mkdf-image-with-text-holder svg.mkdf-iwt-paws path {
+  fill: none;
+  stroke: #f04336;
+  stroke-miterlimit: 10;
+  stroke-width: 1.5;
+}
+
+.mkdf-image-with-text-holder svg.mkdf-iwt-paw {
+  width: 46px;
+  height: 40px;
+  position: absolute;
+  top: -28px;
+  left: -19px;
+  opacity: 0;
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+  -webkit-transition: 0s;
+  -o-transition: 0s;
+  transition: 0s;
+}
+
+.mkdf-image-with-text-holder svg.mkdf-iwt-paw path {
+  fill: #f04336;
+}
+
+.mkdf-image-with-text-holder.mkdf-has-shadow .mkdf-iwt-image {
+  -webkit-box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
+}
+
+.mkdf-image-with-text-holder.rounded .mkdf-iwt-image,
+.mkdf-image-with-text-holder.rounded .mkdf-iwt-image img {
+  border-radius: 6px;
+}
+
+.mkdf-image-with-text-holder .mkdf-iwt-image {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  z-index: 9;
+}
+
+.mkdf-image-with-text-holder .mkdf-iwt-image a, .mkdf-image-with-text-holder .mkdf-iwt-image img {
+  position: relative;
+  display: block;
+}
+
+.mkdf-image-with-text-holder .mkdf-iwt-text-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.mkdf-image-with-text-holder .mkdf-iwt-text {
+  margin: 14px 0 0;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-custom-link.mkdf-image-behavior-custom-link-landing, .mkdf-image-with-text-holder.mkdf-image-behavior-lightbox.mkdf-image-behavior-custom-link-landing {
+  -webkit-transform: translateY(60px);
+  -ms-transform: translateY(60px);
+  transform: translateY(60px);
+  -webkit-transition: 1s cubic-bezier(0.78, 0.2, 0.21, 0.88);
+  -o-transition: 1s cubic-bezier(0.78, 0.2, 0.21, 0.88);
+  transition: 1s cubic-bezier(0.78, 0.2, 0.21, 0.88);
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-custom-link.mkdf-image-behavior-custom-link-landing.mkdf-appear, .mkdf-image-with-text-holder.mkdf-image-behavior-lightbox.mkdf-image-behavior-custom-link-landing.mkdf-appear {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-custom-link .mkdf-iwt-image, .mkdf-image-with-text-holder.mkdf-image-behavior-lightbox .mkdf-iwt-image {
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-custom-link svg.mkdf-iwt-paws path, .mkdf-image-with-text-holder.mkdf-image-behavior-lightbox svg.mkdf-iwt-paws path {
+  opacity: 0;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-custom-link .mkdf-active-hover, .mkdf-image-with-text-holder.mkdf-image-behavior-lightbox .mkdf-active-hover {
+  -webkit-transition: opacity .2s ease-out;
+  -o-transition: opacity .2s ease-out;
+  transition: opacity .2s ease-out;
+  display: block;
+  clip-path: circle(0);
+  -webkit-clip-path: circle(0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
+  margin-left: -12px;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-custom-link .mkdf-active-hover .mkdf-active-hover-middle, .mkdf-image-with-text-holder.mkdf-image-behavior-lightbox .mkdf-active-hover .mkdf-active-hover-middle {
+  position: absolute;
+  top: 0;
+  left: 8px;
+  width: calc(100% - 16px);
+  height: 100%;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-custom-link .mkdf-active-hover svg, .mkdf-image-with-text-holder.mkdf-image-behavior-lightbox .mkdf-active-hover svg {
+  position: absolute;
+  top: 0;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-custom-link .mkdf-active-hover svg path, .mkdf-image-with-text-holder.mkdf-image-behavior-lightbox .mkdf-active-hover svg path {
+  fill: #fff;
+  stroke: #fff;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-custom-link .mkdf-active-hover svg.mkdf-active-hover-left, .mkdf-image-with-text-holder.mkdf-image-behavior-lightbox .mkdf-active-hover svg.mkdf-active-hover-left {
+  left: 0;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-custom-link .mkdf-active-hover svg.mkdf-active-hover-right, .mkdf-image-with-text-holder.mkdf-image-behavior-lightbox .mkdf-active-hover svg.mkdf-active-hover-right {
+  right: 0;
+}
+
+.mkdf-safari .mkdf-image-with-text-holder.mkdf-image-behavior-custom-link .mkdf-active-hover, .mkdf-edge .mkdf-image-with-text-holder.mkdf-image-behavior-custom-link .mkdf-active-hover, .mkdf-ms-explorer .mkdf-image-with-text-holder.mkdf-image-behavior-custom-link .mkdf-active-hover, .mkdf-safari .mkdf-image-with-text-holder.mkdf-image-behavior-lightbox .mkdf-active-hover, .mkdf-edge .mkdf-image-with-text-holder.mkdf-image-behavior-lightbox .mkdf-active-hover, .mkdf-ms-explorer .mkdf-image-with-text-holder.mkdf-image-behavior-lightbox .mkdf-active-hover {
+  opacity: 0;
+  clip-path: circle(150%);
+  -webkit-clip-path: circle(150%);
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-custom-link .mkdf-active-hover svg.mkdf-active-hover-left, .mkdf-image-with-text-holder.mkdf-image-behavior-lightbox .mkdf-active-hover svg.mkdf-active-hover-left {
+  left: 0;
+  height: 98%;
+  width: 11%;
+}
+
+.mkdf-safari .mkdf-image-with-text-holder.mkdf-image-behavior-custom-link .mkdf-active-hover svg.mkdf-active-hover-left, .mkdf-safari .mkdf-image-with-text-holder.mkdf-image-behavior-lightbox .mkdf-active-hover svg.mkdf-active-hover-left {
+  left: 0;
+  height: 100%;
+  width: 12%;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-custom-link .mkdf-active-hover svg.mkdf-active-hover-right, .mkdf-image-with-text-holder.mkdf-image-behavior-lightbox .mkdf-active-hover svg.mkdf-active-hover-right {
+  right: -2px;
+  height: 100%;
+  width: 11%;
+}
+
+.mkdf-safari .mkdf-image-with-text-holder.mkdf-image-behavior-custom-link .mkdf-active-hover svg.mkdf-active-hover-right, .mkdf-safari .mkdf-image-with-text-holder.mkdf-image-behavior-lightbox .mkdf-active-hover svg.mkdf-active-hover-right {
+  right: 0;
+  height: 100%;
+  width: 14px;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-custom-link:hover .mkdf-iwt-image, .mkdf-image-with-text-holder.mkdf-image-behavior-lightbox:hover .mkdf-iwt-image {
+  -webkit-transform: translateY(-7px);
+  -ms-transform: translateY(-7px);
+  transform: translateY(-7px);
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-custom-link:hover .mkdf-active-hover, .mkdf-image-with-text-holder.mkdf-image-behavior-lightbox:hover .mkdf-active-hover {
+  clip-path: circle(150%);
+  -webkit-clip-path: circle(150%);
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+
+.mkdf-safari .mkdf-image-with-text-holder.mkdf-image-behavior-custom-link:hover .mkdf-active-hover, .mkdf-edge .mkdf-image-with-text-holder.mkdf-image-behavior-custom-link:hover .mkdf-active-hover, .mkdf-ms-explorer .mkdf-image-with-text-holder.mkdf-image-behavior-custom-link:hover .mkdf-active-hover, .mkdf-safari .mkdf-image-with-text-holder.mkdf-image-behavior-lightbox:hover .mkdf-active-hover, .mkdf-edge .mkdf-image-with-text-holder.mkdf-image-behavior-lightbox:hover .mkdf-active-hover, .mkdf-ms-explorer .mkdf-image-with-text-holder.mkdf-image-behavior-lightbox:hover .mkdf-active-hover {
+  opacity: 1;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-custom-link:hover svg.mkdf-iwt-paw, .mkdf-image-with-text-holder.mkdf-image-behavior-lightbox:hover svg.mkdf-iwt-paw {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .2s .2s;
+  -o-transition: .2s .2s;
+  transition: .2s .2s;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-custom-link:hover svg.mkdf-iwt-paws path:nth-of-type(1), .mkdf-image-with-text-holder.mkdf-image-behavior-lightbox:hover svg.mkdf-iwt-paws path:nth-of-type(1) {
+  opacity: 1;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  -webkit-transition-delay: 0.02s;
+  -o-transition-delay: 0.02s;
+  transition-delay: 0.02s;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-custom-link:hover svg.mkdf-iwt-paws path:nth-of-type(2), .mkdf-image-with-text-holder.mkdf-image-behavior-lightbox:hover svg.mkdf-iwt-paws path:nth-of-type(2) {
+  opacity: 1;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  -webkit-transition-delay: 0.04s;
+  -o-transition-delay: 0.04s;
+  transition-delay: 0.04s;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-custom-link:hover svg.mkdf-iwt-paws path:nth-of-type(3), .mkdf-image-with-text-holder.mkdf-image-behavior-lightbox:hover svg.mkdf-iwt-paws path:nth-of-type(3) {
+  opacity: 1;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  -webkit-transition-delay: 0.06s;
+  -o-transition-delay: 0.06s;
+  transition-delay: 0.06s;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-custom-link:hover svg.mkdf-iwt-paws path:nth-of-type(4), .mkdf-image-with-text-holder.mkdf-image-behavior-lightbox:hover svg.mkdf-iwt-paws path:nth-of-type(4) {
+  opacity: 1;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  -webkit-transition-delay: 0.08s;
+  -o-transition-delay: 0.08s;
+  transition-delay: 0.08s;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-custom-link:hover svg.mkdf-iwt-paws path:nth-of-type(5), .mkdf-image-with-text-holder.mkdf-image-behavior-lightbox:hover svg.mkdf-iwt-paws path:nth-of-type(5) {
+  opacity: 1;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  -webkit-transition-delay: 0.1s;
+  -o-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-custom-link:hover svg.mkdf-iwt-paws path:nth-of-type(6), .mkdf-image-with-text-holder.mkdf-image-behavior-lightbox:hover svg.mkdf-iwt-paws path:nth-of-type(6) {
+  opacity: 1;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  -webkit-transition-delay: 0.12s;
+  -o-transition-delay: 0.12s;
+  transition-delay: 0.12s;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-custom-link:hover svg.mkdf-iwt-paws path:nth-of-type(7), .mkdf-image-with-text-holder.mkdf-image-behavior-lightbox:hover svg.mkdf-iwt-paws path:nth-of-type(7) {
+  opacity: 1;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  -webkit-transition-delay: 0.14s;
+  -o-transition-delay: 0.14s;
+  transition-delay: 0.14s;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-custom-link:hover svg.mkdf-iwt-paws path:nth-of-type(8), .mkdf-image-with-text-holder.mkdf-image-behavior-lightbox:hover svg.mkdf-iwt-paws path:nth-of-type(8) {
+  opacity: 1;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  -webkit-transition-delay: 0.16s;
+  -o-transition-delay: 0.16s;
+  transition-delay: 0.16s;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-custom-link:hover svg.mkdf-iwt-paws path:nth-of-type(9), .mkdf-image-with-text-holder.mkdf-image-behavior-lightbox:hover svg.mkdf-iwt-paws path:nth-of-type(9) {
+  opacity: 1;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  -webkit-transition-delay: 0.18s;
+  -o-transition-delay: 0.18s;
+  transition-delay: 0.18s;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-custom-link:hover svg.mkdf-iwt-paws path:nth-of-type(10), .mkdf-image-with-text-holder.mkdf-image-behavior-lightbox:hover svg.mkdf-iwt-paws path:nth-of-type(10) {
+  opacity: 1;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  -webkit-transition-delay: 0.2s;
+  -o-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-custom-link:hover svg.mkdf-iwt-paws path:nth-of-type(11), .mkdf-image-with-text-holder.mkdf-image-behavior-lightbox:hover svg.mkdf-iwt-paws path:nth-of-type(11) {
+  opacity: 1;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  -webkit-transition-delay: 0.22s;
+  -o-transition-delay: 0.22s;
+  transition-delay: 0.22s;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-custom-link:hover svg.mkdf-iwt-paws path:nth-of-type(12), .mkdf-image-with-text-holder.mkdf-image-behavior-lightbox:hover svg.mkdf-iwt-paws path:nth-of-type(12) {
+  opacity: 1;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  -webkit-transition-delay: 0.24s;
+  -o-transition-delay: 0.24s;
+  transition-delay: 0.24s;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-custom-link:hover svg.mkdf-iwt-paws path:nth-of-type(13), .mkdf-image-with-text-holder.mkdf-image-behavior-lightbox:hover svg.mkdf-iwt-paws path:nth-of-type(13) {
+  opacity: 1;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  -webkit-transition-delay: 0.26s;
+  -o-transition-delay: 0.26s;
+  transition-delay: 0.26s;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-custom-link:hover svg.mkdf-iwt-paws path:nth-of-type(14), .mkdf-image-with-text-holder.mkdf-image-behavior-lightbox:hover svg.mkdf-iwt-paws path:nth-of-type(14) {
+  opacity: 1;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  -webkit-transition-delay: 0.28s;
+  -o-transition-delay: 0.28s;
+  transition-delay: 0.28s;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-custom-link:hover svg.mkdf-iwt-paws path:nth-of-type(15), .mkdf-image-with-text-holder.mkdf-image-behavior-lightbox:hover svg.mkdf-iwt-paws path:nth-of-type(15) {
+  opacity: 1;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  -webkit-transition-delay: 0.3s;
+  -o-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-custom-link:hover svg.mkdf-iwt-paws path:nth-of-type(16), .mkdf-image-with-text-holder.mkdf-image-behavior-lightbox:hover svg.mkdf-iwt-paws path:nth-of-type(16) {
+  opacity: 1;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  -webkit-transition-delay: 0.32s;
+  -o-transition-delay: 0.32s;
+  transition-delay: 0.32s;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-custom-link:hover svg.mkdf-iwt-paws path:nth-of-type(17), .mkdf-image-with-text-holder.mkdf-image-behavior-lightbox:hover svg.mkdf-iwt-paws path:nth-of-type(17) {
+  opacity: 1;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  -webkit-transition-delay: 0.34s;
+  -o-transition-delay: 0.34s;
+  transition-delay: 0.34s;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-custom-link:hover svg.mkdf-iwt-paws path:nth-of-type(18), .mkdf-image-with-text-holder.mkdf-image-behavior-lightbox:hover svg.mkdf-iwt-paws path:nth-of-type(18) {
+  opacity: 1;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  -webkit-transition-delay: 0.36s;
+  -o-transition-delay: 0.36s;
+  transition-delay: 0.36s;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-custom-link:hover svg.mkdf-iwt-paws path:nth-of-type(19), .mkdf-image-with-text-holder.mkdf-image-behavior-lightbox:hover svg.mkdf-iwt-paws path:nth-of-type(19) {
+  opacity: 1;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  -webkit-transition-delay: 0.38s;
+  -o-transition-delay: 0.38s;
+  transition-delay: 0.38s;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-custom-link:hover svg.mkdf-iwt-paws path:nth-of-type(20), .mkdf-image-with-text-holder.mkdf-image-behavior-lightbox:hover svg.mkdf-iwt-paws path:nth-of-type(20) {
+  opacity: 1;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  -webkit-transition-delay: 0.4s;
+  -o-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-custom-link:hover svg.mkdf-iwt-paws path:nth-of-type(21), .mkdf-image-with-text-holder.mkdf-image-behavior-lightbox:hover svg.mkdf-iwt-paws path:nth-of-type(21) {
+  opacity: 1;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  -webkit-transition-delay: 0.42s;
+  -o-transition-delay: 0.42s;
+  transition-delay: 0.42s;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-custom-link:hover svg.mkdf-iwt-paws path:nth-of-type(22), .mkdf-image-with-text-holder.mkdf-image-behavior-lightbox:hover svg.mkdf-iwt-paws path:nth-of-type(22) {
+  opacity: 1;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  -webkit-transition-delay: 0.44s;
+  -o-transition-delay: 0.44s;
+  transition-delay: 0.44s;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-custom-link.highlight:hover .mkdf-active-hover svg path, .mkdf-image-with-text-holder.mkdf-image-behavior-lightbox.highlight:hover .mkdf-active-hover svg path {
+  fill: #f04336;
+  stroke: #f04336;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-custom-link.highlight:hover .mkdf-active-hover .mkdf-active-hover-middle, .mkdf-image-with-text-holder.mkdf-image-behavior-lightbox.highlight:hover .mkdf-active-hover .mkdf-active-hover-middle {
+  background-color: #f04336;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-custom-link.highlight:hover .mkdf-iwt-title.predefined, .mkdf-image-with-text-holder.mkdf-image-behavior-lightbox.highlight:hover .mkdf-iwt-title.predefined {
+  color: #fff;
+  -webkit-transition: .2s .1s;
+  -o-transition: .2s .1s;
+  transition: .2s .1s;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-lightbox .mkdf-iwt-image {
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-lightbox .mkdf-iwt-image a:hover:after {
+  opacity: 1;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-lightbox .mkdf-iwt-image a:after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: '';
+  background-color: rgba(66, 66, 66, 0.4);
+  opacity: 0;
+  -webkit-transition: opacity .2s ease-in-out;
+  -o-transition: opacity .2s ease-in-out;
+  transition: opacity .2s ease-in-out;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-lightbox svg.mkdf-iwt-paws path {
+  opacity: 0;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-lightbox:hover .mkdf-iwt-image {
+  -webkit-transform: translateY(-7px);
+  -ms-transform: translateY(-7px);
+  transform: translateY(-7px);
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-lightbox:hover .mkdf-active-hover {
+  clip-path: circle(150%);
+  -webkit-clip-path: circle(150%);
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-lightbox:hover svg.mkdf-iwt-paw {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .2s .2s;
+  -o-transition: .2s .2s;
+  transition: .2s .2s;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-lightbox:hover svg.mkdf-iwt-paws path:nth-of-type(1) {
+  opacity: 1;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  -webkit-transition-delay: 0.02s;
+  -o-transition-delay: 0.02s;
+  transition-delay: 0.02s;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-lightbox:hover svg.mkdf-iwt-paws path:nth-of-type(2) {
+  opacity: 1;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  -webkit-transition-delay: 0.04s;
+  -o-transition-delay: 0.04s;
+  transition-delay: 0.04s;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-lightbox:hover svg.mkdf-iwt-paws path:nth-of-type(3) {
+  opacity: 1;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  -webkit-transition-delay: 0.06s;
+  -o-transition-delay: 0.06s;
+  transition-delay: 0.06s;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-lightbox:hover svg.mkdf-iwt-paws path:nth-of-type(4) {
+  opacity: 1;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  -webkit-transition-delay: 0.08s;
+  -o-transition-delay: 0.08s;
+  transition-delay: 0.08s;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-lightbox:hover svg.mkdf-iwt-paws path:nth-of-type(5) {
+  opacity: 1;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  -webkit-transition-delay: 0.1s;
+  -o-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-lightbox:hover svg.mkdf-iwt-paws path:nth-of-type(6) {
+  opacity: 1;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  -webkit-transition-delay: 0.12s;
+  -o-transition-delay: 0.12s;
+  transition-delay: 0.12s;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-lightbox:hover svg.mkdf-iwt-paws path:nth-of-type(7) {
+  opacity: 1;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  -webkit-transition-delay: 0.14s;
+  -o-transition-delay: 0.14s;
+  transition-delay: 0.14s;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-lightbox:hover svg.mkdf-iwt-paws path:nth-of-type(8) {
+  opacity: 1;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  -webkit-transition-delay: 0.16s;
+  -o-transition-delay: 0.16s;
+  transition-delay: 0.16s;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-lightbox:hover svg.mkdf-iwt-paws path:nth-of-type(9) {
+  opacity: 1;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  -webkit-transition-delay: 0.18s;
+  -o-transition-delay: 0.18s;
+  transition-delay: 0.18s;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-lightbox:hover svg.mkdf-iwt-paws path:nth-of-type(10) {
+  opacity: 1;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  -webkit-transition-delay: 0.2s;
+  -o-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-lightbox:hover svg.mkdf-iwt-paws path:nth-of-type(11) {
+  opacity: 1;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  -webkit-transition-delay: 0.22s;
+  -o-transition-delay: 0.22s;
+  transition-delay: 0.22s;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-lightbox:hover svg.mkdf-iwt-paws path:nth-of-type(12) {
+  opacity: 1;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  -webkit-transition-delay: 0.24s;
+  -o-transition-delay: 0.24s;
+  transition-delay: 0.24s;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-lightbox:hover svg.mkdf-iwt-paws path:nth-of-type(13) {
+  opacity: 1;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  -webkit-transition-delay: 0.26s;
+  -o-transition-delay: 0.26s;
+  transition-delay: 0.26s;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-lightbox:hover svg.mkdf-iwt-paws path:nth-of-type(14) {
+  opacity: 1;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  -webkit-transition-delay: 0.28s;
+  -o-transition-delay: 0.28s;
+  transition-delay: 0.28s;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-lightbox:hover svg.mkdf-iwt-paws path:nth-of-type(15) {
+  opacity: 1;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  -webkit-transition-delay: 0.3s;
+  -o-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-lightbox:hover svg.mkdf-iwt-paws path:nth-of-type(16) {
+  opacity: 1;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  -webkit-transition-delay: 0.32s;
+  -o-transition-delay: 0.32s;
+  transition-delay: 0.32s;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-lightbox:hover svg.mkdf-iwt-paws path:nth-of-type(17) {
+  opacity: 1;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  -webkit-transition-delay: 0.34s;
+  -o-transition-delay: 0.34s;
+  transition-delay: 0.34s;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-lightbox:hover svg.mkdf-iwt-paws path:nth-of-type(18) {
+  opacity: 1;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  -webkit-transition-delay: 0.36s;
+  -o-transition-delay: 0.36s;
+  transition-delay: 0.36s;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-lightbox:hover svg.mkdf-iwt-paws path:nth-of-type(19) {
+  opacity: 1;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  -webkit-transition-delay: 0.38s;
+  -o-transition-delay: 0.38s;
+  transition-delay: 0.38s;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-lightbox:hover svg.mkdf-iwt-paws path:nth-of-type(20) {
+  opacity: 1;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  -webkit-transition-delay: 0.4s;
+  -o-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-lightbox:hover svg.mkdf-iwt-paws path:nth-of-type(21) {
+  opacity: 1;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  -webkit-transition-delay: 0.42s;
+  -o-transition-delay: 0.42s;
+  transition-delay: 0.42s;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-lightbox:hover svg.mkdf-iwt-paws path:nth-of-type(22) {
+  opacity: 1;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  -webkit-transition-delay: 0.44s;
+  -o-transition-delay: 0.44s;
+  transition-delay: 0.44s;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-lightbox.highlight:hover svg.mkdf-iwt-paws,
+.mkdf-image-with-text-holder.mkdf-image-behavior-lightbox.highlight:hover svg.mkdf-iwt-paw {
+  visibility: visible;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-lightbox.highlight:hover .mkdf-active-hover svg path {
+  fill: #f04336;
+  stroke: #f04336;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-lightbox.highlight:hover .mkdf-active-hover .mkdf-active-hover-middle {
+  background-color: #f04336;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-lightbox.highlight:hover .mkdf-iwt-title.predefined {
+  color: #fff;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-zoom .mkdf-iwt-image {
+  overflow: hidden;
+}
+
+.touch .mkdf-image-with-text-holder.mkdf-image-behavior-zoom .mkdf-iwt-image {
+  cursor: pointer;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-zoom .mkdf-iwt-image:hover img {
+  -webkit-transform: scale(1.04);
+  -ms-transform: scale(1.04);
+  transform: scale(1.04);
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-zoom .mkdf-iwt-image img {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  transition: -webkit-transform .3s ease-in-out;
+  -o-transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-grayscale .mkdf-iwt-image {
+  overflow: hidden;
+}
+
+.touch .mkdf-image-with-text-holder.mkdf-image-behavior-grayscale .mkdf-iwt-image {
+  cursor: pointer;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-grayscale .mkdf-iwt-image:hover img {
+  -webkit-filter: grayscale(0);
+  filter: none;
+}
+
+.mkdf-image-with-text-holder.mkdf-image-behavior-grayscale .mkdf-iwt-image img {
+  filter: url("img/desaturate.svg#grayscale");
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: gray;
+  filter: grayscale(100%);
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+/* ==========================================================================
+   Image With Text shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Pie Chart shortcode style - begin
+   ========================================================================== */
+.mkdf-pie-chart-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  opacity: 0;
+  -webkit-transition: opacity .2s ease-in;
+  -o-transition: opacity .2s ease-in;
+  transition: opacity .2s ease-in;
+}
+
+.mkdf-pie-chart-holder .mkdf-pc-percentage {
+  position: relative;
+  display: block;
+  height: 176px;
+  width: 176px;
+  line-height: 176px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.mkdf-pie-chart-holder .mkdf-pc-percentage canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.mkdf-pie-chart-holder .mkdf-pc-percentage .mkdf-pc-percent {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  color: #424242;
+  font-size: 36px;
+  line-height: inherit;
+  font-weight: 600;
+}
+
+.mkdf-pie-chart-holder .mkdf-pc-percentage .mkdf-pc-percent:after {
+  position: relative;
+  top: -15px;
+  content: '%';
+  font-size: 15px;
+}
+
+.mkdf-pie-chart-holder .mkdf-pc-text-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+  margin: 30px 0 0;
+}
+
+.mkdf-pie-chart-holder .mkdf-pc-text-holder .mkdf-pc-title {
+  margin: 0;
+}
+
+.mkdf-pie-chart-holder .mkdf-pc-text-holder .mkdf-pc-text {
+  margin: 14px 0 0;
+}
+
+/* ==========================================================================
+   Pie Chart shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Pricing Tables shortcode style - begin
+   ========================================================================== */
+.mkdf-pricing-tables {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.mkdf-price-table {
+  margin-bottom: 72px !important;
+}
+
+.mkdf-price-table .mkdf-pt-inner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.mkdf-price-table .mkdf-pt-inner .mkdf-pt-image {
+  margin-bottom: 32px;
+}
+
+.mkdf-price-table .mkdf-pt-inner .mkdf-pt-image img {
+  border-radius: 5px;
+}
+
+.mkdf-price-table .mkdf-pt-inner .mkdf-pt-col-1 {
+  display: table-cell;
+  width: 28%;
+  vertical-align: top;
+}
+
+.mkdf-price-table .mkdf-pt-inner .mkdf-pt-col-1 .mkdf-pl-price-holder {
+  -webkit-transition: opacity .2s ease-out;
+  -o-transition: opacity .2s ease-out;
+  transition: opacity .2s ease-out;
+  color: #8dd9e9;
+  position: relative;
+  display: inline-block;
+  padding: 3px 23px 1px 15px;
+  -webkit-transform: rotate(1deg);
+  -ms-transform: rotate(1deg);
+  transform: rotate(1deg);
+}
+
+.mkdf-price-table .mkdf-pt-inner .mkdf-pt-col-1 .mkdf-pl-price-holder .mkdf-active-hover-middle {
+  position: absolute;
+  top: 0;
+  left: 8px;
+  width: calc(100% - 16px);
+  height: 100%;
+  border-radius: 4px;
+  background-color: #8dd9e9;
+}
+
+.mkdf-price-table .mkdf-pt-inner .mkdf-pt-col-1 .mkdf-pl-price-holder svg {
+  position: absolute;
+  top: 0;
+}
+
+.mkdf-price-table .mkdf-pt-inner .mkdf-pt-col-1 .mkdf-pl-price-holder svg path {
+  fill: #8dd9e9;
+  stroke: #8dd9e9;
+}
+
+.mkdf-price-table .mkdf-pt-inner .mkdf-pt-col-1 .mkdf-pl-price-holder svg.mkdf-active-hover-left {
+  left: 0;
+}
+
+.mkdf-price-table .mkdf-pt-inner .mkdf-pt-col-1 .mkdf-pl-price-holder svg.mkdf-active-hover-right {
+  right: 0;
+}
+
+.mkdf-price-table .mkdf-pt-inner .mkdf-pt-col-1 .mkdf-pl-price-holder .mkdf-pt-value,
+.mkdf-price-table .mkdf-pt-inner .mkdf-pt-col-1 .mkdf-pl-price-holder .mkdf-pt-price {
+  font-family: 'Amatic SC', sans-serif;
+  color: #fff;
+  font-weight: 700;
+  font-size: 57px;
+  line-height: 1em;
+  position: relative;
+  letter-spacing: 1px;
+}
+
+.mkdf-price-table .mkdf-pt-inner .mkdf-pt-col-1 .mkdf-pl-price-holder .mkdf-pt-value {
+  font-size: 38px;
+}
+
+.mkdf-price-table .mkdf-pt-inner .mkdf-pt-col-1 .mkdf-pl-price-holder sup {
+  bottom: 0;
+}
+
+.mkdf-price-table .mkdf-pt-inner .mkdf-pt-col-1 .mkdf-pl-price-holder svg path {
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+.mkdf-price-table .mkdf-pt-inner .mkdf-pt-col-1 .mkdf-pt-mark {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #8f9093;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  display: block;
+  padding: 0 2px 0 19px;
+  margin: 3px 0 0;
+}
+
+.mkdf-price-table .mkdf-pt-inner .mkdf-pt-col-2 {
+  display: table-cell;
+  width: 72%;
+  vertical-align: top;
+  text-align: left;
+  padding: 0 22px;
+}
+
+.mkdf-price-table .mkdf-pt-inner ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mkdf-price-table .mkdf-pt-inner ul li {
+  margin: 0;
+  padding: 6px 0;
+}
+
+.mkdf-price-table .mkdf-pt-inner ul li.mkdf-pt-title-holder {
+  position: relative;
+}
+
+.mkdf-price-table .mkdf-pt-inner ul li.mkdf-pt-title-holder .mkdf-pt-title {
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+  margin: 25px 0;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+  font-size: 30px;
+  line-height: 1.2em;
+  color: #4a4a4a;
+  margin: 3px 0 0;
+  display: block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.mkdf-price-table .mkdf-pt-inner ul li.mkdf-pt-title-holder .mkdf-pt-title a {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+}
+
+.mkdf-price-table .mkdf-pt-inner ul li.mkdf-pt-title-holder .mkdf-pt-title a:hover {
+  color: #f04336;
+}
+
+.mkdf-price-table .mkdf-pt-inner ul li.mkdf-pt-title-holder .mkdf-pt-subtitle {
+  display: block;
+  margin: 16px 0 2px;
+}
+
+.mkdf-price-table .mkdf-pt-inner ul li.mkdf-pt-content ul li {
+  display: table;
+}
+
+.mkdf-price-table .mkdf-pt-inner ul li.mkdf-pt-content ul li:before {
+  content: "\53";
+  font-family: "dripicons-v2" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  font-size: 20px;
+  line-height: 1;
+  color: #f04336;
+  -webkit-font-smoothing: antialiased;
+  display: table-cell;
+  position: relative;
+  top: 5px;
+  padding-right: 12px;
+}
+
+.mkdf-price-table .mkdf-pt-inner ul li.mkdf-pt-button {
+  padding: 22px 0 0;
+}
+
+/* ==========================================================================
+   Pricing Tables shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Progress Bar shortcode style - begin
+   ========================================================================== */
+.mkdf-progress-bar {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.mkdf-progress-bar.mkdf-pb-percent-floating {
+  width: 100%;
+  height: 100%;
+}
+
+.mkdf-progress-bar.mkdf-pb-percent-floating .mkdf-pb-percent-holder {
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.mkdf-progress-bar .mkdf-pb-title-holder {
+  position: relative;
+  margin: 27px 0 9px;
+}
+
+.mkdf-progress-bar .mkdf-pb-title-holder .mkdf-pb-title {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 100;
+}
+
+.mkdf-progress-bar .mkdf-pb-percent-holder {
+  -webkit-transition: opacity .2s ease-out;
+  -o-transition: opacity .2s ease-out;
+  transition: opacity .2s ease-out;
+  padding: 4px 11px 2px 10px;
+  position: absolute;
+  right: 0;
+  bottom: 1px;
+  opacity: 0;
+}
+
+.mkdf-progress-bar .mkdf-pb-percent-holder .mkdf-active-hover-middle {
+  position: absolute;
+  top: 0;
+  left: 8px;
+  width: calc(100% - 16px);
+  height: 100%;
+  border-radius: 4px;
+  background-color: #ebebeb;
+}
+
+.mkdf-progress-bar .mkdf-pb-percent-holder svg {
+  position: absolute;
+  top: 0;
+}
+
+.mkdf-progress-bar .mkdf-pb-percent-holder svg path {
+  fill: #ebebeb;
+  stroke: #ebebeb;
+}
+
+.mkdf-progress-bar .mkdf-pb-percent-holder svg.mkdf-active-hover-left {
+  left: 0;
+}
+
+.mkdf-progress-bar .mkdf-pb-percent-holder svg.mkdf-active-hover-right {
+  right: 0;
+}
+
+.mkdf-progress-bar .mkdf-pb-percent-holder .mkdf-pb-percent {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  color: #8f9093;
+  line-height: 1em;
+  letter-spacing: 1px;
+  color: #f04336;
+  font-size: 30px;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  opacity: 0;
+  z-index: 10;
+}
+
+.mkdf-progress-bar .mkdf-pb-percent-holder .mkdf-pb-percent:after {
+  content: '%';
+}
+
+.mkdf-progress-bar .mkdf-pb-percent-holder .mkdf-active-hover {
+  color: #ebebeb;
+}
+
+.mkdf-progress-bar .mkdf-pb-percent-holder svg path {
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+.mkdf-progress-bar .mkdf-pb-content-holder {
+  position: relative;
+  height: 12px;
+  overflow: hidden;
+  background-color: #ebebeb;
+  border-radius: 4px;
+}
+
+.mkdf-progress-bar .mkdf-pb-content-holder .mkdf-pb-content {
+  height: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  background-color: #f04336;
+}
+
+/* ==========================================================================
+   Progress Bar shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Section Title shortcode styles - begin
+   ========================================================================== */
+.mkdf-section-title-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.mkdf-section-title-holder .mkdf-st-title {
+  margin: 0;
+}
+
+.mkdf-section-title-holder .mkdf-st-text {
+  display: block;
+  margin: 15px 0 0;
+}
+
+.mkdf-section-title-holder .mkdf-st-button {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.mkdf-section-title-holder .mkdf-st-button .mkdf-btn {
+  margin-top: 26px;
+}
+
+.mkdf-section-title-holder.mkdf-st-highlight .mkdf-st-highlight-title-holder {
+  -webkit-transition: opacity .2s ease-out;
+  -o-transition: opacity .2s ease-out;
+  transition: opacity .2s ease-out;
+  position: relative;
+  display: inline-block;
+}
+
+.mkdf-section-title-holder.mkdf-st-highlight .mkdf-st-highlight-title-holder .mkdf-active-hover-middle {
+  position: absolute;
+  top: 0;
+  left: 8px;
+  width: calc(100% - 16px);
+  height: 100%;
+  border-radius: 4px;
+  background-color: currentColor;
+}
+
+.mkdf-section-title-holder.mkdf-st-highlight .mkdf-st-highlight-title-holder svg {
+  position: absolute;
+  top: 0;
+}
+
+.mkdf-section-title-holder.mkdf-st-highlight .mkdf-st-highlight-title-holder svg path {
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+.mkdf-section-title-holder.mkdf-st-highlight .mkdf-st-highlight-title-holder svg.mkdf-active-hover-left {
+  left: 0;
+}
+
+.mkdf-section-title-holder.mkdf-st-highlight .mkdf-st-highlight-title-holder svg.mkdf-active-hover-right {
+  right: 0;
+}
+
+.mkdf-section-title-holder.mkdf-st-highlight .mkdf-st-highlight-title-holder .mkdf-st-highlight-title {
+  padding: 0 10px 0 5px;
+  position: relative;
+  color: #fff;
+  z-index: 1;
+}
+
+/* ==========================================================================
+   Section Title shortcode styles - end
+   ========================================================================== */
+/* ==========================================================================
+   Separator shortcode style - begin
+   ========================================================================== */
+.mkdf-separator-holder {
+  position: relative;
+  height: auto;
+  font-size: 0;
+  line-height: 1em;
+}
+
+.mkdf-separator-holder.mkdf-separator-center {
+  text-align: center;
+}
+
+.mkdf-separator-holder.mkdf-separator-left {
+  text-align: left;
+}
+
+.mkdf-separator-holder.mkdf-separator-right {
+  text-align: right;
+}
+
+.mkdf-separator-holder.mkdf-separator-full-width .mkdf-separator {
+  width: 100% !important;
+}
+
+.mkdf-separator {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  border-bottom: 1px solid #ebebeb;
+  margin: 10px 0;
+}
+
+/* ==========================================================================
+   Separator shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Single Image shortcode style - begin
+   ========================================================================== */
+.mkdf-single-image-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  /***** Lightbox Behavior Style - begin *****/
+  /***** Lightbox Behavior Style - end *****/
+  /***** Zoom Behavior Style - begin *****/
+  /***** Zoom Behavior Style - end *****/
+  /***** Grayscale Behavior Style - begin *****/
+  /***** Grayscale Behavior Style - end *****/
+  /***** Moving Behavior Style - begin *****/
+  /***** Moving Behavior Style - end *****/
+}
+
+.mkdf-single-image-holder.mkdf-has-shadow .mkdf-si-inner {
+  -webkit-box-shadow: 0 0 4.85px 0.15px rgba(0, 0, 0, 0.09);
+  box-shadow: 0 0 4.85px 0.15px rgba(0, 0, 0, 0.09);
+}
+
+.mkdf-single-image-holder.rounded .mkdf-si-inner,
+.mkdf-single-image-holder.rounded .mkdf-si-inner img {
+  border-radius: 6px;
+}
+
+.mkdf-single-image-holder .mkdf-si-inner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.mkdf-single-image-holder .mkdf-si-inner a, .mkdf-single-image-holder .mkdf-si-inner img {
+  position: relative;
+  display: inline-block;
+}
+
+.mkdf-single-image-holder.mkdf-image-behavior-lightbox .mkdf-si-inner a {
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.mkdf-single-image-holder.mkdf-image-behavior-lightbox .mkdf-si-inner a:hover img {
+  -webkit-transform: scale(1.05) translateX(3px);
+  -ms-transform: scale(1.05) translateX(3px);
+  transform: scale(1.05) translateX(3px);
+}
+
+.mkdf-single-image-holder.mkdf-image-behavior-lightbox .mkdf-si-inner a a {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.mkdf-single-image-holder.mkdf-image-behavior-lightbox .mkdf-si-inner a img {
+  display: block;
+  width: 100%;
+  -webkit-transform: scale(1.05) translateX(-3px);
+  -ms-transform: scale(1.05) translateX(-3px);
+  transform: scale(1.05) translateX(-3px);
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.mkdf-single-image-holder.mkdf-image-behavior-zoom .mkdf-si-inner {
+  overflow: hidden;
+}
+
+.touch .mkdf-single-image-holder.mkdf-image-behavior-zoom .mkdf-si-inner {
+  cursor: pointer;
+}
+
+.mkdf-single-image-holder.mkdf-image-behavior-zoom .mkdf-si-inner:hover img {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.mkdf-single-image-holder.mkdf-image-behavior-zoom .mkdf-si-inner img {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  transition: -webkit-transform .3s ease-in-out;
+  -o-transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+}
+
+.mkdf-single-image-holder.mkdf-image-behavior-grayscale .mkdf-si-inner {
+  overflow: hidden;
+}
+
+.touch .mkdf-single-image-holder.mkdf-image-behavior-grayscale .mkdf-si-inner {
+  cursor: pointer;
+}
+
+.mkdf-single-image-holder.mkdf-image-behavior-grayscale .mkdf-si-inner:hover img {
+  -webkit-filter: grayscale(0);
+  filter: none;
+}
+
+.mkdf-single-image-holder.mkdf-image-behavior-grayscale .mkdf-si-inner img {
+  filter: url("img/desaturate.svg#grayscale");
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: gray;
+  filter: grayscale(100%);
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.mkdf-single-image-holder.mkdf-image-behavior-moving .mkdf-si-inner {
+  overflow: hidden;
+  padding: 10% 0;
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  background-size: 120%;
+  -webkit-transition: background .7s ease-out;
+  -o-transition: background .7s ease-out;
+  transition: background .7s ease-out;
+}
+
+.mkdf-single-image-holder.mkdf-image-behavior-moving .mkdf-si-inner:hover {
+  background-position: 90% center;
+}
+
+.touch .mkdf-single-image-holder.mkdf-image-behavior-moving .mkdf-si-inner {
+  cursor: pointer;
+}
+
+.mkdf-single-image-holder.mkdf-image-behavior-moving .mkdf-si-inner img {
+  z-index: -1;
+  max-width: 80%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-single-image-holder.mkdf-image-behavior-moving .mkdf-si-inner {
+    padding: 0;
+    background: none;
+  }
+  .mkdf-single-image-holder.mkdf-image-behavior-moving .mkdf-si-inner img {
+    z-index: inherit;
+    max-width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Single Image shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Social Share shortcode style - begin
+   ========================================================================== */
+.mkdf-social-share-holder {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.mkdf-social-share-holder .mkdf-social-title {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 14px 0 0;
+}
+
+.mkdf-social-share-holder ul {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mkdf-social-share-holder li {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+  margin: 0;
+}
+
+.mkdf-social-share-holder li a {
+  position: relative;
+  font-size: 11px;
+}
+
+.mkdf-social-share-holder li a span.fab {
+  font-size: 12px;
+}
+
+.mkdf-social-share-holder li a span.fab.fa-facebook-f {
+  position: relative;
+  left: 2px;
+}
+
+.mkdf-social-share-holder.mkdf-list li {
+  margin-right: 31px;
+}
+
+.mkdf-social-share-holder.mkdf-list li:last-child {
+  margin-right: 0;
+}
+
+.mkdf-social-share-holder.mkdf-list li .mkdf-social-network-icon {
+  position: relative;
+  z-index: 0;
+}
+
+.mkdf-social-share-holder.mkdf-list li a {
+  color: #f04336;
+  -webkit-transition: all .2s ease-out;
+  -o-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+.mkdf-social-share-holder.mkdf-list li a:hover {
+  color: #fff;
+}
+
+.mkdf-social-share-holder.mkdf-list li a:hover svg.mkdf-social path {
+  fill: #f04336;
+}
+
+.mkdf-social-share-holder.mkdf-list svg.mkdf-social {
+  width: 31px;
+  height: 29px;
+  position: absolute;
+  left: -10px;
+  top: -6px;
+}
+
+.mkdf-social-share-holder.mkdf-list svg.mkdf-social path {
+  fill: #f7f7f5;
+}
+
+.mkdf-social-share-holder.mkdf-text li {
+  margin-right: 13px;
+}
+
+.mkdf-social-share-holder.mkdf-text li:last-child {
+  margin-right: 0;
+}
+
+.mkdf-social-share-holder.mkdf-dropdown {
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.mkdf-social-share-holder.mkdf-dropdown:hover .mkdf-social-share-dropdown ul li {
+  opacity: 1;
+  visibility: visible;
+  cursor: pointer;
+  /* opacity and visibility need to be different, but not background-color */
+}
+
+.mkdf-social-share-holder.mkdf-dropdown:hover .mkdf-social-share-dropdown ul li:nth-child(2) {
+  -webkit-transition-delay: 0.2s;
+  -o-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.mkdf-social-share-holder.mkdf-dropdown:hover .mkdf-social-share-dropdown ul li:nth-child(3) {
+  -webkit-transition-delay: 0.3s;
+  -o-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.mkdf-social-share-holder.mkdf-dropdown:hover .mkdf-social-share-dropdown ul li:nth-child(4) {
+  -webkit-transition-delay: 0.4s;
+  -o-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+.mkdf-social-share-holder.mkdf-dropdown:hover .mkdf-social-share-dropdown ul li:nth-child(5) {
+  -webkit-transition-delay: 0.5s;
+  -o-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.mkdf-social-share-holder.mkdf-dropdown:hover .mkdf-social-share-dropdown ul li:nth-child(6) {
+  -webkit-transition-delay: 0.6s;
+  -o-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+
+.mkdf-social-share-holder.mkdf-dropdown:hover .mkdf-social-share-dropdown ul li:nth-child(7) {
+  -webkit-transition-delay: 0.7s;
+  -o-transition-delay: 0.7s;
+  transition-delay: 0.7s;
+}
+
+.mkdf-social-share-holder.mkdf-dropdown .mkdf-social-share-dropdown-opener {
+  display: block;
+}
+
+.mkdf-social-share-holder.mkdf-dropdown .mkdf-social-share-dropdown-opener .mkdf-social-share-title {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 5px;
+}
+
+.mkdf-social-share-holder.mkdf-dropdown .mkdf-social-share-dropdown {
+  position: absolute;
+  visibility: hidden;
+  z-index: 950;
+}
+
+.mkdf-social-share-holder.mkdf-dropdown .mkdf-social-share-dropdown ul {
+  position: relative;
+  display: block;
+  z-index: 990;
+  margin: 0;
+  padding: 0 !important;
+}
+
+.mkdf-social-share-holder.mkdf-dropdown .mkdf-social-share-dropdown li {
+  position: absolute;
+  display: block;
+  text-align: center;
+  visibility: hidden;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: opacity .2s ease-out, visibility .2s ease-out;
+  -o-transition: opacity .2s ease-out, visibility .2s ease-out;
+  transition: opacity .2s ease-out, visibility .2s ease-out;
+}
+
+.mkdf-social-share-holder.mkdf-dropdown .mkdf-social-share-dropdown li a {
+  -webkit-transition: color .2s ease-out, background-color .2s ease-out;
+  -o-transition: color .2s ease-out, background-color .2s ease-out;
+  transition: color .2s ease-out, background-color .2s ease-out;
+}
+
+.mkdf-social-share-holder.mkdf-dropdown .mkdf-social-share-dropdown li * {
+  display: block;
+  line-height: inherit;
+}
+
+.mkdf-social-share-holder.mkdf-dropdown.mkdf-bottom .mkdf-social-share-dropdown {
+  bottom: 0;
+  left: 0;
+}
+
+.mkdf-social-share-holder.mkdf-dropdown.mkdf-bottom .mkdf-social-share-dropdown li {
+  width: 90px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #ececec;
+}
+
+.mkdf-social-share-holder.mkdf-dropdown.mkdf-bottom .mkdf-social-share-dropdown li:not(:first-child) {
+  border-top: none;
+}
+
+.mkdf-social-share-holder.mkdf-dropdown.mkdf-bottom .mkdf-social-share-dropdown li.mkdf-facebook-share a:hover {
+  background-color: #3b5998;
+  color: #fff;
+}
+
+.mkdf-social-share-holder.mkdf-dropdown.mkdf-bottom .mkdf-social-share-dropdown li.mkdf-twitter-share a:hover {
+  background-color: #00aced;
+  color: #fff;
+}
+
+.mkdf-social-share-holder.mkdf-dropdown.mkdf-bottom .mkdf-social-share-dropdown li.mkdf-google_plus-share a:hover {
+  background-color: #dd4b39;
+  color: #fff;
+}
+
+.mkdf-social-share-holder.mkdf-dropdown.mkdf-bottom .mkdf-social-share-dropdown li.mkdf-linkedin-share a:hover {
+  background-color: #007bb5;
+  color: #fff;
+}
+
+.mkdf-social-share-holder.mkdf-dropdown.mkdf-bottom .mkdf-social-share-dropdown li.mkdf-tumblr-share a:hover {
+  background-color: #32506d;
+  color: #fff;
+}
+
+.mkdf-social-share-holder.mkdf-dropdown.mkdf-bottom .mkdf-social-share-dropdown li.mkdf-pinterest-share a:hover {
+  background-color: #cb2027;
+  color: #fff;
+}
+
+.mkdf-social-share-holder.mkdf-dropdown.mkdf-bottom .mkdf-social-share-dropdown li.mkdf-vk-share a:hover {
+  background-color: #45668e;
+  color: #fff;
+}
+
+.mkdf-social-share-holder.mkdf-dropdown.mkdf-bottom .mkdf-social-share-dropdown li a {
+  font-size: 12px;
+  color: #8f9093;
+  background-color: #fff;
+}
+
+.mkdf-social-share-holder.mkdf-dropdown.mkdf-bottom .mkdf-social-share-dropdown li:nth-child(1) {
+  bottom: -30px;
+}
+
+.mkdf-social-share-holder.mkdf-dropdown.mkdf-bottom .mkdf-social-share-dropdown li:nth-child(2) {
+  bottom: -60px;
+}
+
+.mkdf-social-share-holder.mkdf-dropdown.mkdf-bottom .mkdf-social-share-dropdown li:nth-child(3) {
+  bottom: -90px;
+}
+
+.mkdf-social-share-holder.mkdf-dropdown.mkdf-bottom .mkdf-social-share-dropdown li:nth-child(4) {
+  bottom: -120px;
+}
+
+.mkdf-social-share-holder.mkdf-dropdown.mkdf-bottom .mkdf-social-share-dropdown li:nth-child(5) {
+  bottom: -150px;
+}
+
+.mkdf-social-share-holder.mkdf-dropdown.mkdf-bottom .mkdf-social-share-dropdown li:nth-child(6) {
+  bottom: -180px;
+}
+
+.mkdf-social-share-holder.mkdf-dropdown.mkdf-bottom .mkdf-social-share-dropdown li:nth-child(7) {
+  bottom: -210px;
+}
+
+.mkdf-social-share-holder.mkdf-dropdown.mkdf-right .mkdf-social-share-dropdown {
+  top: 0;
+  right: 0;
+}
+
+.mkdf-social-share-holder.mkdf-dropdown.mkdf-right .mkdf-social-share-dropdown li {
+  width: calc(90px / 3);
+}
+
+.mkdf-social-share-holder.mkdf-dropdown.mkdf-right .mkdf-social-share-dropdown li:nth-child(1) {
+  left: 5px;
+}
+
+.mkdf-social-share-holder.mkdf-dropdown.mkdf-right .mkdf-social-share-dropdown li:nth-child(2) {
+  left: 35px;
+}
+
+.mkdf-social-share-holder.mkdf-dropdown.mkdf-right .mkdf-social-share-dropdown li:nth-child(3) {
+  left: 65px;
+}
+
+.mkdf-social-share-holder.mkdf-dropdown.mkdf-right .mkdf-social-share-dropdown li:nth-child(4) {
+  left: 95px;
+}
+
+.mkdf-social-share-holder.mkdf-dropdown.mkdf-right .mkdf-social-share-dropdown li:nth-child(5) {
+  left: 125px;
+}
+
+.mkdf-social-share-holder.mkdf-dropdown.mkdf-right .mkdf-social-share-dropdown li:nth-child(6) {
+  left: 155px;
+}
+
+.mkdf-social-share-holder.mkdf-dropdown.mkdf-right .mkdf-social-share-dropdown li:nth-child(7) {
+  left: 185px;
+}
+
+.mkdf-social-share-holder.mkdf-dropdown.mkdf-left .mkdf-social-share-dropdown {
+  top: 0;
+  left: 0;
+}
+
+.mkdf-social-share-holder.mkdf-dropdown.mkdf-left .mkdf-social-share-dropdown li {
+  width: calc(90px / 3);
+}
+
+.mkdf-social-share-holder.mkdf-dropdown.mkdf-left .mkdf-social-share-dropdown li:nth-child(1) {
+  right: 5px;
+}
+
+.mkdf-social-share-holder.mkdf-dropdown.mkdf-left .mkdf-social-share-dropdown li:nth-child(2) {
+  right: 35px;
+}
+
+.mkdf-social-share-holder.mkdf-dropdown.mkdf-left .mkdf-social-share-dropdown li:nth-child(3) {
+  right: 65px;
+}
+
+.mkdf-social-share-holder.mkdf-dropdown.mkdf-left .mkdf-social-share-dropdown li:nth-child(4) {
+  right: 95px;
+}
+
+.mkdf-social-share-holder.mkdf-dropdown.mkdf-left .mkdf-social-share-dropdown li:nth-child(5) {
+  right: 125px;
+}
+
+.mkdf-social-share-holder.mkdf-dropdown.mkdf-left .mkdf-social-share-dropdown li:nth-child(6) {
+  right: 155px;
+}
+
+.mkdf-social-share-holder.mkdf-dropdown.mkdf-left .mkdf-social-share-dropdown li:nth-child(7) {
+  right: 185px;
+}
+
+/* ==========================================================================
+   Social Share shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Tabs shortcode style - begin
+   ========================================================================== */
+.mkdf-tabs {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.mkdf-tabs .mkdf-tabs-nav {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mkdf-tabs .mkdf-tabs-nav li {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.mkdf-tabs .mkdf-tabs-nav li a {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: color .2s ease-out, background-color .2s ease-out, border-color .2s ease-out;
+  -o-transition: color .2s ease-out, background-color .2s ease-out, border-color .2s ease-out;
+  transition: color .2s ease-out, background-color .2s ease-out, border-color .2s ease-out;
+}
+
+.mkdf-tabs .mkdf-tab-container {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.mkdf-tabs .mkdf-tab-container p {
+  margin: 0;
+}
+
+.mkdf-tabs.mkdf-tabs-standard .mkdf-tabs-nav li a {
+  padding: 12px 23px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 700;
+  color: #8f9093;
+  background-color: #f7f7f5;
+}
+
+.mkdf-tabs.mkdf-tabs-standard .mkdf-tabs-nav li.ui-state-active a,
+.mkdf-tabs.mkdf-tabs-standard .mkdf-tabs-nav li.ui-state-hover a {
+  color: #fff;
+  background-color: #f04336;
+}
+
+.mkdf-tabs.mkdf-tabs-standard .mkdf-tab-container {
+  margin: 25px 0 0;
+}
+
+.mkdf-tabs.mkdf-tabs-boxed .mkdf-tabs-nav li {
+  margin: 0 12px 0 0;
+}
+
+.mkdf-tabs.mkdf-tabs-boxed .mkdf-tabs-nav li a {
+  padding: 12px 23px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 700;
+  color: #8f9093;
+  background-color: #f7f7f5;
+}
+
+.mkdf-tabs.mkdf-tabs-boxed .mkdf-tabs-nav li.ui-state-active a,
+.mkdf-tabs.mkdf-tabs-boxed .mkdf-tabs-nav li.ui-state-hover a {
+  color: #fff;
+  background-color: #f04336;
+}
+
+.mkdf-tabs.mkdf-tabs-boxed .mkdf-tabs-nav li:last-child {
+  margin: 0;
+}
+
+.mkdf-tabs.mkdf-tabs-boxed .mkdf-tab-container {
+  margin: 25px 0 0;
+}
+
+.mkdf-tabs.mkdf-tabs-simple .mkdf-tabs-nav {
+  border-bottom: 1px solid #ececec;
+}
+
+.mkdf-tabs.mkdf-tabs-simple .mkdf-tabs-nav li {
+  margin: 0 31px 0 0;
+}
+
+.mkdf-tabs.mkdf-tabs-simple .mkdf-tabs-nav li a {
+  padding: 13px 0;
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 700;
+  color: #8f9093;
+}
+
+.mkdf-tabs.mkdf-tabs-simple .mkdf-tabs-nav li.ui-state-active a,
+.mkdf-tabs.mkdf-tabs-simple .mkdf-tabs-nav li.ui-state-hover a {
+  color: #424242;
+}
+
+.mkdf-tabs.mkdf-tabs-simple .mkdf-tabs-nav li:last-child {
+  margin: 0;
+}
+
+.mkdf-tabs.mkdf-tabs-simple .mkdf-tab-container {
+  padding: 31px 0;
+  border-bottom: 1px solid #ececec;
+}
+
+.mkdf-tabs.mkdf-tabs-vertical {
+  display: table;
+}
+
+.mkdf-tabs.mkdf-tabs-vertical.overflow {
+  width: 100%;
+}
+
+.mkdf-tabs.mkdf-tabs-vertical.overflow .mkdf-tabs-nav {
+  left: -64px;
+  position: absolute;
+}
+
+.mkdf-safari .mkdf-tabs.mkdf-tabs-vertical.overflow .mkdf-tabs-nav {
+  left: -63px;
+}
+
+.mkdf-tabs.mkdf-tabs-vertical.overflow .mkdf-tab-container {
+  width: 100%;
+}
+
+.mkdf-tabs.mkdf-tabs-vertical .mkdf-tabs-nav {
+  vertical-align: top;
+  width: 64px;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 99;
+}
+
+.mkdf-tabs.mkdf-tabs-vertical .mkdf-tabs-nav li {
+  display: block;
+  float: none;
+  height: 87px;
+  text-align: center;
+  border-radius: 5px 0 0 5px;
+}
+
+.mkdf-tabs.mkdf-tabs-vertical .mkdf-tabs-nav li a {
+  width: 100%;
+  height: 100%;
+}
+
+.mkdf-tabs.mkdf-tabs-vertical .mkdf-tabs-nav li a .mkdf-tab-title {
+  position: relative;
+  display: block;
+  top: 50%;
+  left: 7px;
+  margin: 0 15px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-family: "Amatic SC", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  color: #8f9093;
+  line-height: 1em;
+  letter-spacing: 1px;
+  font-size: 30px;
+  color: #fff;
+}
+
+.mkdf-tabs.mkdf-tabs-vertical .mkdf-tabs-nav li.ui-state-active a,
+.mkdf-tabs.mkdf-tabs-vertical .mkdf-tabs-nav li.ui-state-hover a {
+  color: #424242;
+}
+
+.mkdf-tabs.mkdf-tabs-vertical .mkdf-tabs-nav li:last-child {
+  margin: 0;
+}
+
+.mkdf-tabs.mkdf-tabs-vertical .mkdf-tabs-nav li:before {
+  content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="9.5" height="9.5" viewBox="0 0 11 11"><path style="fill:rgba(255,255,255,255);stroke:rgba(255,255,255,255)" d="M8.6 1C7.4 0.5 6.2 0.3 5 0.8 4 1.2 3.2 1.9 2.5 2.7c0-0.2 0-0.3 0-0.5 0-0.3-0.4-0.3-0.5 0 0 0.4-0.1 0.8-0.2 1.2C1.5 3.9 1.2 4.3 0.9 4.7 0.6 5.1 1.1 5.7 1.5 5.4c0 0.5 0 1.1 0.2 1.6 0.4 1.2 1.5 2.2 2.6 2.8 2.9 1.7 5-0.1 6.1-3C11.2 4.7 10.9 2 8.6 1zM9.5 6.4C9.3 7.3 8.8 8.3 8.1 8.9c-1.4 1.3-3.4 0.5-4.6-0.7C2.3 7.1 2.2 6 2.3 4.7c1.4-1.4 2.9-3.1 4.8-2.8C9.4 2.3 10.2 4.1 9.5 6.4z"/></svg>');
+  position: absolute;
+  top: 2px;
+  left: 10px;
+  opacity: 0;
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+.mkdf-tabs.mkdf-tabs-vertical .mkdf-tabs-nav li.ui-tabs-active {
+  position: relative;
+}
+
+.mkdf-tabs.mkdf-tabs-vertical .mkdf-tabs-nav li.ui-tabs-active:before {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .1s .1s;
+  -o-transition: .1s .1s;
+  transition: .1s .1s;
+}
+
+.mkdf-tabs.mkdf-tabs-vertical .mkdf-tab-container {
+  display: table-cell;
+  vertical-align: top;
+  height: 100%;
+  padding: 30px 35px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.mkdf-tabs.mkdf-tabs-vertical .mkdf-custom-font-holder .mkdf-cf-highlight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  -webkit-animation: mkdf-animate-tab-active-hover 1s forwards;
+  animation: mkdf-animate-tab-active-hover 1s forwards;
+}
+
+.mkdf-tabs.mkdf-tabs-vertical .mkdf-custom-font-holder {
+  opacity: 0;
+  -webkit-animation: mkdf-animate-tab-title-up .5s forwards;
+  animation: mkdf-animate-tab-title-up .5s forwards;
+}
+
+.mkdf-tabs.mkdf-tabs-vertical .mkdf-section-title-holder {
+  opacity: 0;
+  -webkit-animation: mkdf-animate-tab-text-up .5s .2s forwards;
+  animation: mkdf-animate-tab-text-up .5s .2s forwards;
+}
+
+@-webkit-keyframes mkdf-animate-tab-active-hover {
+  0% {
+    clip-path: circle(0);
+    -webkit-clip-path: circle(0);
+  }
+  100% {
+    clip-path: circle(150%);
+    -webkit-clip-path: circle(150%);
+  }
+}
+
+@keyframes mkdf-animate-tab-active-hover {
+  0% {
+    clip-path: circle(0);
+    -webkit-clip-path: circle(0);
+  }
+  100% {
+    clip-path: circle(150%);
+    -webkit-clip-path: circle(150%);
+  }
+}
+
+@-webkit-keyframes mkdf-animate-tab-title-up {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes mkdf-animate-tab-title-up {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes mkdf-animate-tab-text-up {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes mkdf-animate-tab-text-up {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.ui-widget-content {
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  border: 0;
+  border-radius: 0;
+}
+
+.ui-widget-content .ui-widget-header {
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  color: initial;
+  background: none;
+  border: 0;
+  border-radius: 0;
+}
+
+.ui-widget-content .ui-tabs-nav li {
+  position: initial;
+  font-weight: inherit;
+  color: inherit;
+  background: initial;
+  border: 0;
+  border-radius: 0;
+}
+
+.ui-widget-content .ui-widget-content {
+  color: inherit;
+  background: none;
+  border: 0;
+  border-radius: 0;
+}
+
+/* ==========================================================================
+   Tabs shortcode style - end
+   ========================================================================== */
+@media (min-width: 1024px) {
+  body:not(.mkdf-safari) .mkdf-tabs .mkdf-st-highlight-title-holder .mkdf-st-highlight {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-animation: mkdf-animate-tab-active-hover 1.3s forwards;
+    animation: mkdf-animate-tab-active-hover 1.3s forwards;
+  }
+}
+
+/* ==========================================================================
+# Team carousel - begin
+	========================================================================== */
+@media only screen and (max-width: 680px) {
+  .mkdf-team-carousel-holder .mkdf-owl-slider .owl-nav {
+    display: none;
+  }
+}
+
+.mkdf-team-carousel-holder .mkdf-owl-slider .owl-nav .owl-prev {
+  left: -50px;
+}
+
+.mkdf-team-carousel-holder .mkdf-owl-slider .owl-nav .owl-next {
+  right: -50px;
+}
+
+/* ==========================================================================
+# Team carousel - end
+	========================================================================== */
+/* ==========================================================================
+   Team shortcode style - begin
+   ========================================================================== */
+.mkdf-team-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.touch .mkdf-team-holder.mkdf-team-info-on-image {
+  cursor: pointer;
+}
+
+.mkdf-team-holder.mkdf-team-info-on-image .mkdf-team-social-holder {
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  z-index: 999;
+  height: 51px;
+  cursor: pointer;
+}
+
+.mkdf-team-holder.mkdf-team-info-on-image .mkdf-team-social-holder:after {
+  content: "";
+  position: absolute;
+  left: -3px;
+  top: -5px;
+  width: 133px;
+  cursor: pointer;
+  height: 128px;
+  pointer-events: none;
+  z-index: -123;
+}
+
+.mkdf-team-holder.mkdf-team-info-on-image .mkdf-team-social-holder svg.mkdf-social {
+  width: 48px;
+  height: 51.3px;
+}
+
+.mkdf-team-holder.mkdf-team-info-on-image .mkdf-team-social-holder svg.mkdf-social path {
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  fill: #fff;
+}
+
+.mkdf-team-holder.mkdf-team-info-on-image .mkdf-team-social-holder .mkdf-team-icon-holder {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: translate(0, 0) scale(0.6);
+  -ms-transform: translate(0, 0) scale(0.6);
+  transform: translate(0, 0) scale(0.6);
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  position: absolute;
+  top: 13px;
+  left: 18px;
+  z-index: -1;
+}
+
+.mkdf-team-holder.mkdf-team-info-on-image .mkdf-team-social-holder .mkdf-team-icon-holder svg.mkdf-social-icon {
+  width: 21px;
+  height: 19px;
+}
+
+.mkdf-team-holder.mkdf-team-info-on-image .mkdf-team-social-holder .mkdf-team-icon-holder svg.mkdf-social-icon path {
+  fill: #fff;
+}
+
+.mkdf-team-holder.mkdf-team-info-on-image .mkdf-team-social-holder .mkdf-team-icon-holder .mkdf-icon-shortcode {
+  position: absolute;
+  font-size: 11px;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(40%, 35%);
+  -ms-transform: translate(40%, 35%);
+  transform: translate(40%, 35%);
+  color: #f04336;
+}
+
+.mkdf-team-holder.mkdf-team-info-on-image .mkdf-team-social-holder .mkdf-team-icon-holder .mkdf-icon-shortcode .mkdf-icon-font-awesome {
+  -webkit-transform: translate(16%, -6%);
+  -ms-transform: translate(16%, -6%);
+  transform: translate(16%, -6%);
+}
+
+.mkdf-team-holder.mkdf-team-info-on-image .mkdf-team-social-holder .mkdf-team-icon-holder .mkdf-icon-shortcode .mkdf-icon-font-awesome.fa-facebook-f {
+  position: relative;
+  left: 4px;
+}
+
+.mkdf-team-holder.mkdf-team-info-on-image .mkdf-team-social-holder .mkdf-team-icon-holder .mkdf-icon-shortcode .mkdf-icon-font-awesome.fa-pinterest-p {
+  position: relative;
+  left: 1px;
+}
+
+.mkdf-team-holder.mkdf-team-info-on-image .mkdf-team-social-holder .mkdf-team-icon-holder .mkdf-icon-shortcode .mkdf-icon-ion-icon {
+  -webkit-transform: translate(27%, -6%);
+  -ms-transform: translate(27%, -6%);
+  transform: translate(27%, -6%);
+}
+
+.mkdf-team-holder.mkdf-team-info-on-image .mkdf-team-social-holder .mkdf-team-icon-holder .mkdf-icon-shortcode .mkdf-icon-ion-icon.ion-social-facebook {
+  -webkit-transform: translate(157%, -6%);
+  -ms-transform: translate(157%, -6%);
+  transform: translate(157%, -6%);
+}
+
+.mkdf-team-holder.mkdf-team-info-on-image .mkdf-team-social-holder .mkdf-team-icon-holder .mkdf-icon-shortcode .mkdf-icon-simple-line-icon {
+  -webkit-transform: translate(10%, -5%);
+  -ms-transform: translate(10%, -5%);
+  transform: translate(10%, -5%);
+}
+
+.mkdf-team-holder.mkdf-team-info-on-image .mkdf-team-social-holder .mkdf-team-icon-holder a:hover svg.mkdf-social-icon path {
+  fill: #f04336;
+}
+
+.mkdf-team-holder.mkdf-team-info-on-image .mkdf-team-social-holder .mkdf-team-icon-holder a:hover .mkdf-icon-shortcode {
+  color: #fff;
+}
+
+.mkdf-team-holder.mkdf-team-info-on-image .mkdf-team-social-holder .mkdf-icon-dripicons.social-holder {
+  position: absolute;
+  top: 17px;
+  left: 15px;
+  font-size: 20px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  color: #f04336;
+}
+
+.mkdf-team-holder.mkdf-team-info-on-image .mkdf-team-social-holder:hover:after {
+  pointer-events: auto;
+}
+
+.mkdf-team-holder.mkdf-team-info-on-image .mkdf-team-social-holder:hover svg.mkdf-social path {
+  fill: #f04336;
+}
+
+.mkdf-team-holder.mkdf-team-info-on-image .mkdf-team-social-holder:hover .mkdf-icon-dripicons.social-holder {
+  color: #fff;
+}
+
+.mkdf-team-holder.mkdf-team-info-on-image .mkdf-team-social-holder:hover div.mkdf-team-icon-holder {
+  visibility: visible;
+  opacity: 1;
+}
+
+.mkdf-team-holder.mkdf-team-info-on-image .mkdf-team-social-holder:hover div.mkdf-team-icon-holder:nth-child(2) {
+  -webkit-transform: translate(33px, -6px) scale(1);
+  -ms-transform: translate(33px, -6px) scale(1);
+  transform: translate(33px, -6px) scale(1);
+}
+
+.mkdf-team-holder.mkdf-team-info-on-image .mkdf-team-social-holder:hover div.mkdf-team-icon-holder:nth-child(3) {
+  -webkit-transform: translate(36px, 21px) scale(1);
+  -ms-transform: translate(36px, 21px) scale(1);
+  transform: translate(36px, 21px) scale(1);
+  -webkit-transition-delay: .2s;
+  -o-transition-delay: .2s;
+  transition-delay: .2s;
+}
+
+.mkdf-team-holder.mkdf-team-info-on-image .mkdf-team-social-holder:hover div.mkdf-team-icon-holder:nth-child(4) {
+  -webkit-transform: translate(16px, 43px) scale(1);
+  -ms-transform: translate(16px, 43px) scale(1);
+  transform: translate(16px, 43px) scale(1);
+  -webkit-transition-delay: .3s;
+  -o-transition-delay: .3s;
+  transition-delay: .3s;
+}
+
+.mkdf-team-holder.mkdf-team-info-on-image .mkdf-team-social-holder:hover div.mkdf-team-icon-holder:nth-child(5) {
+  -webkit-transform: translate(-13px, 40px) scale(1);
+  -ms-transform: translate(-13px, 40px) scale(1);
+  transform: translate(-13px, 40px) scale(1);
+  -webkit-transition-delay: .4s;
+  -o-transition-delay: .4s;
+  transition-delay: .4s;
+}
+
+.mkdf-team-holder.mkdf-team-info-on-image .mkdf-team-social-holder:hover div.mkdf-team-icon-holder:nth-child(6) {
+  -webkit-transform: translate(45px, 46px) scale(1);
+  -ms-transform: translate(45px, 46px) scale(1);
+  transform: translate(45px, 46px) scale(1);
+  -webkit-transition-delay: .5s;
+  -o-transition-delay: .5s;
+  transition-delay: .5s;
+}
+
+.mkdf-team-holder.mkdf-team-info-on-image .mkdf-team-position,
+.mkdf-team-holder.mkdf-team-info-on-image .mkdf-team-name {
+  -webkit-transition: opacity .2s ease-out;
+  -o-transition: opacity .2s ease-out;
+  transition: opacity .2s ease-out;
+  display: inline-block;
+  position: relative;
+}
+
+.mkdf-team-holder.mkdf-team-info-on-image .mkdf-team-position .mkdf-active-hover-middle,
+.mkdf-team-holder.mkdf-team-info-on-image .mkdf-team-name .mkdf-active-hover-middle {
+  position: absolute;
+  top: 0;
+  left: 8px;
+  width: calc(100% - 16px);
+  height: 100%;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.mkdf-team-holder.mkdf-team-info-on-image .mkdf-team-position svg,
+.mkdf-team-holder.mkdf-team-info-on-image .mkdf-team-name svg {
+  position: absolute;
+  top: 0;
+}
+
+.mkdf-team-holder.mkdf-team-info-on-image .mkdf-team-position svg path,
+.mkdf-team-holder.mkdf-team-info-on-image .mkdf-team-name svg path {
+  fill: #fff;
+  stroke: #fff;
+}
+
+.mkdf-team-holder.mkdf-team-info-on-image .mkdf-team-position svg.mkdf-active-hover-left,
+.mkdf-team-holder.mkdf-team-info-on-image .mkdf-team-name svg.mkdf-active-hover-left {
+  left: 0;
+}
+
+.mkdf-team-holder.mkdf-team-info-on-image .mkdf-team-position svg.mkdf-active-hover-right,
+.mkdf-team-holder.mkdf-team-info-on-image .mkdf-team-name svg.mkdf-active-hover-right {
+  right: 0;
+}
+
+.mkdf-team-holder.mkdf-team-info-on-image .mkdf-team-position {
+  padding: 5px 14px 5px 11px;
+  margin-bottom: 9px;
+}
+
+.mkdf-team-holder.mkdf-team-info-on-image .mkdf-team-position-text,
+.mkdf-team-holder.mkdf-team-info-on-image .mkdf-team-name-text {
+  position: relative;
+  color: #f04336;
+  margin: 0;
+}
+
+.mkdf-team-holder.mkdf-team-info-on-image .mkdf-team-name-text {
+  -webkit-transition: color .2s ease-in-out;
+  -o-transition: color .2s ease-in-out;
+  transition: color .2s ease-in-out;
+}
+
+.mkdf-team-holder.mkdf-team-info-on-image .mkdf-team-name {
+  padding: 3px 14px 5px 8px;
+}
+
+.mkdf-team-holder.mkdf-team-info-on-image .mkdf-team-name svg path {
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.mkdf-team-holder.mkdf-team-info-on-image .mkdf-team-image img {
+  width: 100%;
+}
+
+.mkdf-team-holder.mkdf-team-info-on-image .mkdf-active-hover-middle, .mkdf-team-holder.mkdf-team-info-on-image .mkdf-team-name-text {
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.mkdf-team-holder.mkdf-team-info-on-image .mkdf-team-position-holder {
+  -webkit-transform: translateY(30px);
+  -ms-transform: translateY(30px);
+  transform: translateY(30px);
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.mkdf-team-holder.mkdf-team-info-on-image .mkdf-team-position-holder .mkdf-team-position-text {
+  opacity: 0;
+}
+
+.mkdf-team-holder.mkdf-team-info-on-image .mkdf-team-position-holder .mkdf-active-hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  clip-path: circle(0);
+  -webkit-clip-path: circle(0);
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.mkdf-team-holder.mkdf-team-info-on-image:hover .mkdf-team-position-holder {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.mkdf-team-holder.mkdf-team-info-on-image:hover .mkdf-team-position-holder .mkdf-team-position-text {
+  opacity: 1;
+  -webkit-transition: .3s .15s;
+  -o-transition: .3s .15s;
+  transition: .3s .15s;
+}
+
+.mkdf-team-holder.mkdf-team-info-on-image:hover .mkdf-team-position-holder .mkdf-active-hover {
+  clip-path: circle(150%);
+  -webkit-clip-path: circle(150%);
+  -webkit-transition: .8s;
+  -o-transition: .8s;
+  transition: .8s;
+}
+
+.mkdf-team-holder.mkdf-team-info-on-image:hover .mkdf-team-name svg path {
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+.mkdf-team-holder.mkdf-team-info-on-image:hover .mkdf-team-name .mkdf-active-hover {
+  color: #f04336;
+}
+
+.mkdf-team-holder.mkdf-team-info-on-image:hover .mkdf-team-name .mkdf-active-hover-middle {
+  background-color: #f04336;
+}
+
+.mkdf-team-holder.mkdf-team-info-on-image:hover .mkdf-team-name .mkdf-team-name-text {
+  color: #fff;
+}
+
+.mkdf-team-holder.mkdf-team-info-below-image .mkdf-team-social-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 17px 0 0;
+}
+
+.mkdf-team-holder.mkdf-team-info-below-image .mkdf-team-social-holder .mkdf-team-icon {
+  font-size: 14px;
+  margin: 0 12px 0 0;
+}
+
+.mkdf-team-holder.mkdf-team-info-below-image .mkdf-team-social-holder .mkdf-team-icon .mkdf-icon-element {
+  font-size: inherit;
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+.mkdf-team-holder.mkdf-team-info-below-image .mkdf-team-position {
+  margin: 3px 0 0;
+}
+
+.mkdf-team-holder .mkdf-team-image {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.mkdf-team-holder .mkdf-team-image img {
+  display: block;
+  border-radius: 4px;
+}
+
+.mkdf-team-holder .mkdf-team-info {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 19px 0 0;
+}
+
+.mkdf-team-holder .mkdf-team-name {
+  margin: 0;
+  position: relative;
+  color: #f04336;
+}
+
+.mkdf-team-holder .mkdf-team-text {
+  margin: 15px 0 0;
+}
+
+.mkdf-team-holder .mkdf-team-social-wrapper {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.mkdf-team-holder .mkdf-team-social-outer {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.mkdf-team-holder .mkdf-team-social-inner {
+  position: relative;
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  padding: 20px 40px 29px;
+  vertical-align: bottom;
+  text-align: center;
+}
+
+.mkdf-team-holder .mkdf-team-link {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: auto;
+}
+
+/* ==========================================================================
+   Team shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Underline Text shortcode styles - begin
+   ========================================================================== */
+.mkdf-underline-text-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+  margin: 0;
+}
+
+.mkdf-underline-text-holder .mkdf-ut-underline {
+  border-bottom: 2px solid #f04336;
+}
+
+/* ==========================================================================
+   Underline Text shortcode styles - end
+   ========================================================================== */
+/* ==========================================================================
+   Video Button shortcode start styles
+   ========================================================================== */
+.mkdf-video-button-holder {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.mkdf-video-button-holder:hover .mkdf-video-button path {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.mkdf-video-button-holder .mkdf-video-button {
+  overflow: visible;
+}
+
+.mkdf-video-button-holder .mkdf-video-button path {
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.mkdf-video-button-holder .mkdf-video-button-play,
+.mkdf-video-button-holder .mkdf-video-button-play-image {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.mkdf-video-button-holder .mkdf-video-button-play .mkdf-video-button-play-inner {
+  color: #f04336;
+  position: relative;
+  width: 66px;
+  height: 62px;
+  top: 50%;
+  left: 50%;
+  display: block;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.mkdf-video-button-holder .mkdf-video-button-play .mkdf-video-button-play-inner svg {
+  width: 66px;
+  height: 62px;
+}
+
+.mkdf-video-button-holder .mkdf-video-button-play .mkdf-video-button-play-inner svg path.mkdf-video-button-circle {
+  fill: #fff;
+}
+
+.mkdf-video-button-holder .mkdf-video-button-play .mkdf-video-button-play-inner svg polygon.mkdf-video-button-triangle {
+  fill: currentColor;
+}
+
+.mkdf-video-button-holder .mkdf-video-button-image {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.mkdf-video-button-holder .mkdf-video-button-image img {
+  display: block;
+  width: 100%;
+}
+
+/* ==========================================================================
+   Video Button shortcode end styles
+   ========================================================================== */
+/* ==========================================================================
+   Working Hours shortcode style - begin
+   ========================================================================== */
+.mkdf-wh-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.mkdf-wh-holder ul {
+  list-style-type: none;
+}
+
+.mkdf-wh-holder ul li {
+  position: relative;
+  margin: 0 0 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  color: #f04336;
+}
+
+.mkdf-wh-holder ul li .mkdf-wh-dots {
+  width: 100%;
+  height: 1px;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(10%, #4a4a4a), color-stop(0, rgba(255, 255, 255, 0)));
+  background-image: -o-linear-gradient(left, #4a4a4a 10%, rgba(255, 255, 255, 0) 0);
+  background-image: linear-gradient(to right, #4a4a4a 10%, rgba(255, 255, 255, 0) 0);
+  background-position: bottom;
+  background-size: 8px 2px;
+  background-repeat: repeat-x;
+  position: relative;
+  top: -7px;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-preferred-size: 5%;
+  flex-basis: 5%;
+}
+
+.mkdf-wh-holder ul li .mkdf-wh-hours {
+  -webkit-transition: opacity .2s ease-out;
+  -o-transition: opacity .2s ease-out;
+  transition: opacity .2s ease-out;
+  float: right;
+  position: relative;
+  display: inline-block;
+  padding: 2px 9px 0px 7px;
+  max-width: 40%;
+}
+
+.mkdf-wh-holder ul li .mkdf-wh-hours .mkdf-active-hover-middle {
+  position: absolute;
+  top: 0;
+  left: 8px;
+  width: calc(100% - 16px);
+  height: 100%;
+  border-radius: 4px;
+  background-color: #f04336;
+}
+
+.mkdf-wh-holder ul li .mkdf-wh-hours svg {
+  position: absolute;
+  top: 0;
+}
+
+.mkdf-wh-holder ul li .mkdf-wh-hours svg path {
+  fill: #f04336;
+  stroke: #f04336;
+}
+
+.mkdf-wh-holder ul li .mkdf-wh-hours svg.mkdf-active-hover-left {
+  left: 0;
+}
+
+.mkdf-wh-holder ul li .mkdf-wh-hours svg.mkdf-active-hover-right {
+  right: 0;
+}
+
+.mkdf-wh-holder ul li .mkdf-wh-hours .mkdf-wh-hour-text {
+  position: relative;
+  font-family: 'Amatic SC',sans-serif;
+  font-size: 25px;
+  color: #fff;
+}
+
+.mkdf-wh-holder ul li .mkdf-wh-hours svg path {
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+.mkdf-wh-holder ul li .mkdf-wh-day {
+  color: #424242;
+  max-width: 45%;
+}
+
+/* ==========================================================================
+   Working Hours shortcode style - end
+   ========================================================================== */
+
+/*# sourceMappingURL=../../../../plugins/pawfriends-core/assets/css/shortcodes-map.css.map */

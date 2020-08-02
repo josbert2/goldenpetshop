@@ -1,0 +1,25 @@
+/* ==========================================================================
+  Block Quote shortcode responsive style - begin
+   ========================================================================== */
+
+@include phone-portrait {
+
+	.mkdf-block-quote-holder {
+
+		blockquote {
+			padding: 6px 0 2px;
+
+			p {
+				margin-left: 0;
+			}
+
+			svg.mkdf-blockquote {
+				float: none;
+			}
+		}
+	}
+}
+
+/* ==========================================================================
+   Block Quote shortcode responsive style - end
+   ========================================================================== */

@@ -1,0 +1,63 @@
+/* ==========================================================================
+   Blog List widget style - begin
+   ========================================================================== */
+.widget.mkdf-blog-list-widget .mkdf-post-info-date a {
+  -webkit-transition: opacity .2s ease-out;
+  -o-transition: opacity .2s ease-out;
+  transition: opacity .2s ease-out;
+  position: relative;
+  display: inline-block;
+  padding: 0 10px 2px 8px;
+}
+
+.widget.mkdf-blog-list-widget .mkdf-post-info-date a .mkdf-active-hover-middle {
+  position: absolute;
+  top: 0;
+  left: 8px;
+  width: calc(100% - 16px);
+  height: 100%;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.widget.mkdf-blog-list-widget .mkdf-post-info-date a svg {
+  position: absolute;
+  top: 0;
+}
+
+.widget.mkdf-blog-list-widget .mkdf-post-info-date a svg path {
+  fill: #fff;
+  stroke: #fff;
+}
+
+.widget.mkdf-blog-list-widget .mkdf-post-info-date a svg.mkdf-active-hover-left {
+  left: 0;
+}
+
+.widget.mkdf-blog-list-widget .mkdf-post-info-date a svg.mkdf-active-hover-right {
+  right: 0;
+}
+
+.widget.mkdf-blog-list-widget .mkdf-post-info-date .mkdf-post-date {
+  position: relative;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.widget.mkdf-blog-list-widget .mkdf-widget-title-holder {
+  margin-bottom: 37px !important;
+}
+
+.widget.mkdf-blog-list-widget .mkdf-blog-list-holder {
+  margin-bottom: 0;
+}
+
+.widget.mkdf-blog-list-widget ul li:last-child {
+  margin-bottom: 8px !important;
+}
+
+/* ==========================================================================
+   Blog List widget style - end
+   ========================================================================== */
+
+/*# sourceMappingURL=blog-list-widget-map.css.map */

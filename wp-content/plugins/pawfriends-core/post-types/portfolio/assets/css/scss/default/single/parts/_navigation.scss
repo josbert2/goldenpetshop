@@ -1,0 +1,142 @@
+/* ==========================================================================
+   Portfolio Single navigation style - begin
+   ========================================================================== */
+
+.mkdf-ps-navigation {
+	position: relative;
+	display: table;
+	width: 100%;
+	vertical-align: middle;
+	padding: 21px 0;
+	margin: 81px 0 0;
+	clear: both;
+    box-sizing: border-box;
+	border-top: 1px solid #ececec;
+	border-bottom: 1px solid #ececec;
+
+    .mkdf-ps-full-width-custom-layout & {
+        padding: 0 40px;
+    }
+	
+	.mkdf-ps-back-btn {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		display: inline-block;
+		vertical-align: middle;
+		transform: translateX(-50%) translateY(-50%);
+		
+		a {
+			position: relative;
+			display: inline-block;
+			margin: 0;
+			padding: 0;
+			vertical-align: middle;
+			cursor: pointer;
+			font-size: 23px;
+			line-height: 1;
+			
+			span {
+				display: block;
+				line-height: inherit;
+				
+				&:before,
+				&:after {
+					display: block;
+					line-height: 14px;
+				}
+				
+				&:after {
+					content: "\e0a6";
+				}
+			}
+
+			.mkdf-portfolio-back-svg {
+				display: block;
+				width: 29px;
+
+				path {
+					fill: $default-heading-color;
+					transition: fill .2s ease-out;
+				}
+
+				&:hover {
+
+					path {
+						fill: $first-main-color;
+					}
+				}
+			}
+		}
+	}
+	
+	.mkdf-ps-prev,
+	.mkdf-ps-next {
+		position: relative;
+		display: table-cell;
+		vertical-align: middle;
+		width: 49%;
+		padding: 0;
+		box-sizing: border-box;
+		
+		a {
+			position: relative;
+			display: inline-block;
+			vertical-align: middle;
+			font-family: "Amatic SC", sans-serif;
+			color: $default-heading-color;
+			font-weight: 700;
+			font-size: 30px;
+			line-height: 1em;
+			
+			.mkdf-ps-nav-mark {
+				position: relative;
+				display: inline-block;
+				vertical-align: top;
+			}
+
+			.mkdf-ps-nav-label {
+				color: inherit;
+			}
+
+			&:hover {
+				color: $first-main-color;
+			}
+		}
+	}
+	
+	.mkdf-ps-prev {
+		left: 0;
+		
+		a {
+			
+			.mkdf-ps-nav-mark,
+			.mkdf-ps-nav-label {
+				left: 0;
+			}
+
+			.mkdf-ps-nav-mark {
+				margin: 0 6px 0 0;
+			}
+		}
+	}
+	
+	.mkdf-ps-next {
+		text-align: right;
+		
+		a {
+			
+			.mkdf-ps-nav-mark,
+			.mkdf-ps-nav-label {
+				right: 0;
+			}
+
+			.mkdf-ps-nav-mark {
+				margin: 0 0 0 6px;
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Portfolio Single navigation style - end
+   ========================================================================== */

@@ -1,0 +1,210 @@
+/* ==========================================================================
+   Testimonials standard style - begin
+   ========================================================================== */
+
+.mkdf-testimonials-holder {
+    
+    &.mkdf-testimonials-standard {
+        text-align: center;
+
+        &:not(.arrows-below) {
+
+            .mkdf-testimonials {
+
+                &[data-enable-navigation="yes"] {
+
+                    .mkdf-testimonial-text-holder {
+                        padding: 0 12%;
+                    }
+                }
+            }
+        }
+
+        .mkdf-testimonial-image {
+            @include mkdfRelativeHolderLayout();
+            margin: 24px 0 0;
+
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+
+        .mkdf-testimonial-title {
+            margin: 0;
+            display: inline;
+        }
+
+        .mkdf-testimonial-author {
+            @include mkdfSVGbg();
+            display: inline-block;
+            position: relative;
+            margin: 24px 0 0;
+            padding: 2px 9px 2px 8px;
+            font-size: 20px;
+            color: #fff;
+            font-weight: 700;
+
+            .mkdf-testimonials-author-name {
+                position: relative;
+            }
+        }
+
+        .mkdf-testimonial-text {
+            margin: 19px 0 14px;
+            color: #a7a9ac;
+        }
+
+        .mkdf-testimonial-author-job {
+            margin: 10px 0 0;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .mkdf-testimonial-text-holder {
+            box-sizing: border-box;
+
+            .mkdf-testimonial-title-holder {
+                position: relative;
+                display: inline-block;
+            }
+
+            .mkdf-fireworks {
+                position: absolute;
+                top: -40px;
+                right: -64px;
+                width: 49px;
+                height: 58px;
+
+                path {
+                    fill: $first-main-color;
+                }
+            }
+        }
+
+        .owl-dots {
+            margin: 60px 0 0;
+        }
+
+        &.fireworks {
+
+            .mkdf-testimonial-text-holder {
+
+                .mkdf-testimonial-title-holder {
+                    margin-top: 40px;
+                }
+            }
+
+            .owl-nav {
+                .owl-prev,
+                .owl-next {
+                    top: calc(50% + 20px);
+                }
+            }
+        }
+
+        &:not(.mkdf-testimonials-light) {
+
+            .owl-nav {
+
+                svg.mkdf-owl-nav {
+
+                    path.mkdf-nav-arrow {
+                        fill: $first-main-color;
+                        stroke: $first-main-color;
+                    }
+                }
+
+                .owl-prev,
+                .owl-next {
+
+                    &:hover {
+
+                        svg.mkdf-owl-nav {
+
+                            path.mkdf-nav-arrow {
+                                fill: #d9d3cc;
+                                stroke: #d9d3cc;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.arrows-below {
+
+            .owl-nav {
+
+                .owl-prev,
+                .owl-next {
+                    transform: none;
+                    position: relative;
+                    top: 45px;
+                }
+
+                .owl-prev {
+                    left: -8px;
+                }
+                .owl-next {
+                    right: -8px;
+                }
+            }
+        }
+
+
+        /* Light/Dark styles */
+        &.mkdf-testimonials-light {
+            
+            .mkdf-testimonial-title,
+            .mkdf-testimonial-text,
+            .mkdf-testimonial-author,
+            .mkdf-testimonial-author-job {
+                color: #fff;
+            }
+
+            .mkdf-active-hover-left path,
+            .mkdf-active-hover-right path {
+                fill: #fff;
+                stroke: #fff;
+            }
+
+            .mkdf-active-hover-middle {
+                background-color: #fff !important;
+            }
+
+            .mkdf-testimonials-author-name {
+                color: $first-main-color;
+            }
+
+            .mkdf-fireworks {
+
+                path {
+                    fill: #fff !important;
+                }
+            }
+
+            .owl-dots {
+                
+                .owl-dot {
+                    
+                    span {
+                        border: 2px solid #d9d3cc;
+                    }
+                    
+                    &:hover,
+                    &.active {
+
+                        span {
+                            background-color: #fff;
+                            border-color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Testimonials standard style - end
+   ========================================================================== */

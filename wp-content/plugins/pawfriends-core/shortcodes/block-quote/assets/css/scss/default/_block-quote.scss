@@ -1,0 +1,31 @@
+/* ==========================================================================
+  Block Quote shortcode style - begin
+   ========================================================================== */
+
+.mkdf-block-quote-holder {
+	@include mkdfRelativeHolderLayout();
+
+	blockquote {
+		padding: 6px 0 2px 24px;
+
+		p {
+			margin-left: 82px;
+			margin-top: 5px;
+		}
+
+		svg.mkdf-blockquote {
+			float: left;
+			width: 55px;
+			height: 65px;
+
+			path {
+				fill: $first-main-color;
+			}
+		}
+	}
+}
+
+
+/* ==========================================================================
+   Block Quote shortcode style - end
+   ========================================================================== */

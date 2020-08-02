@@ -1,0 +1,118 @@
+/* ==========================================================================
+   Blog responsive styles - begin
+   ========================================================================== */
+/* ==========================================================================
+   Blog Common responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 480px) {
+  .mkdf-blog-holder article.format-link .mkdf-post-heading .mkdf-post-link-holder-inner {
+    padding: 0 20px;
+  }
+  .mkdf-blog-holder article.format-quote .mkdf-post-heading .mkdf-post-quote-holder .mkdf-post-quote-holder-inner {
+    padding: 0 20px;
+  }
+  .mkdf-blog-holder article .mkdf-post-info-top .mkdf-post-info-date svg.mkdf-date {
+    height: 25px;
+  }
+  .mkdf-blog-holder article .mkdf-post-info-top .mkdf-post-info-comments-holder svg.mkdf-comments {
+    height: 26px;
+  }
+  .mkdf-blog-holder article .mkdf-post-info-top .mkdf-blog-like svg.mkdf-heart {
+    height: 22px;
+  }
+  .mkdf-blog-holder article .mkdf-post-info-top .mkdf-post-info-category svg.mkdf-category {
+    height: 25px;
+  }
+  .mkdf-blog-holder article .mkdf-post-info-top .mkdf-tags-holder svg.mkdf-tags {
+    height: 34px;
+    top: -6px;
+  }
+}
+
+/* ==========================================================================
+   Blog Common responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Blog List - Masonry responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .mkdf-blog-holder.mkdf-blog-masonry.mkdf-grid-list.mkdf-three-columns .mkdf-item-space {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .mkdf-blog-holder.mkdf-blog-masonry.mkdf-grid-list.mkdf-three-columns .mkdf-item-space {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Blog List - Masonry responsive style - end
+   ========================================================================== */
+/* Single author box responsive styles - begin
+	====================================================================== */
+@media only screen and (max-width: 1024px) {
+  .mkdf-author-description .mkdf-author-description-image svg {
+    display: none;
+  }
+  .mkdf-author-description .mkdf-author-description-image img {
+    display: block;
+  }
+}
+
+/* Single author box responsive styles - end
+	====================================================================== */
+@media only screen and (max-width: 768px) {
+  .mkdf-related-posts-holder .mkdf-related-post {
+    width: 50% !important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .mkdf-related-posts-holder .mkdf-related-post {
+    width: 100% !important;
+  }
+}
+
+/* ==========================================================================
+   Blog List shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .mkdf-blog-list-holder.mkdf-three-columns .mkdf-blog-list .mkdf-item-space {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-blog-list-holder.mkdf-three-columns .mkdf-blog-list .mkdf-item-space {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Blog List shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Blog Slider shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .mkdf-blog-slider-holder.mkdf-bs-carousel-centered .active.center .mkdf-item-text-wrapper {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .mkdf-blog-slider-holder.mkdf-bs-carousel-centered .mkdf-item-info-section, .mkdf-blog-slider-holder.mkdf-bs-slider .mkdf-item-info-section {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Blog Slider shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Blog responsive styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=blog-map-responsive.css.map */

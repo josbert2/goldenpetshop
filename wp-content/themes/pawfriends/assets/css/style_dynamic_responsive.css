@@ -1,0 +1,11 @@
+@media only screen and (max-width: 1024px){
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+}
+
+@media only screen and (min-width: 681px) and (max-width: 768px){
+}
+
+@media only screen and (max-width: 680px){
+h2 { font-size: 44px;line-height: 50px;}h3, .mkdf-title-holder h3.mkdf-page-title { font-size: 30px;line-height: 35px;}}

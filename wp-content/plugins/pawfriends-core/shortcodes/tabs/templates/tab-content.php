@@ -1,0 +1,1 @@
+<div class="mkdf-tab-container" id="tab-<?php echo sanitize_title($tab_title); ?>" <?php pawfriends_mikado_inline_style( $tab_color ); ?>><?php echo do_shortcode($content); ?></div>

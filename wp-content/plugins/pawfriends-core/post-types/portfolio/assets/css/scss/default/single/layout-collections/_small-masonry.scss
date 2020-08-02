@@ -1,0 +1,41 @@
+/* ==========================================================================
+   Portfolio Single - Small Masonry layout style - begin
+   ========================================================================== */
+
+.mkdf-portfolio-single-holder {
+    
+    &.mkdf-ps-small-masonry-layout {
+
+        .mkdf-ps-content-item {
+            margin: 0 0 50px;
+
+            .mkdf-st-title {
+                line-height: 0.75;
+                margin-bottom: 30px;
+            }
+        }
+
+        .mkdf-ps-info-item:not(.mkdf-ps-content-item) {
+            margin: 0 0 16px;
+
+            p, a {
+                line-height: 2.3;
+            }
+
+            a {
+                color: #8f9093;
+
+                &:hover {
+                    color: $first-main-color;
+                }
+            }
+        }
+
+        .mkdf-ps-navigation {
+            margin: 49px 0 80px;
+        }
+    }
+}
+/* ==========================================================================
+   Portfolio Single - Small Masonry layout style - end
+   ========================================================================== */

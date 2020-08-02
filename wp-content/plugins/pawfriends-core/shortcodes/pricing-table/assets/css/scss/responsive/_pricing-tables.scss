@@ -1,0 +1,133 @@
+/* ==========================================================================
+   Pricing Tables shortcode responsive style - begin
+   ========================================================================== */
+
+@include laptop-landscape-large {
+
+    .mkdf-price-table {
+
+        .mkdf-pt-inner {
+
+            .mkdf-pt-col-1 {
+                width: 35%;
+            }
+
+            .mkdf-pt-col-2 {
+                width: 65%;
+            }
+        }
+    }
+}
+
+@include laptop-landscape-mac {
+
+    .mkdf-price-table {
+
+        .mkdf-pt-inner {
+
+            .mkdf-pt-col-2 {
+                padding: 0 5px;
+            }
+        }
+    }
+}
+
+@include laptop-landscape {
+
+    .mkdf-price-table {
+
+        .mkdf-pt-inner {
+
+            .mkdf-pt-col-1 {
+
+                .mkdf-pl-price-holder {
+
+                    .mkdf-pt-value,
+                    .mkdf-pt-price {
+                        font-size: 48px;
+                    }
+
+                    .mkdf-pt-value {
+                        font-size: 33px;
+                    }
+                }
+            }
+            .mkdf-pt-col-2 {
+                padding: 0 0 0 18px;
+            }
+        }
+    }
+}
+
+@include ipad-landscape {
+
+    .mkdf-price-table.mkdf-item-space {
+        width: 50% !important;
+
+        .mkdf-pt-inner {
+
+            .mkdf-pt-col-1 {
+                width: 28%;
+
+                .mkdf-pt-mark {
+                    padding: 0;
+                }
+            }
+
+            .mkdf-pt-col-2 {
+                width: 72%;
+                padding: 0 10px;
+            }
+        }
+    }
+}
+
+@include ipad-portrait {
+
+    .mkdf-price-table {
+
+        .mkdf-pt-inner {
+
+            .mkdf-pt-col-1 {
+                width: 32%;
+
+                .mkdf-pl-price-holder {
+                    padding: 3px 15px 1px 9px;
+
+                    .mkdf-pt-value,
+                    .mkdf-pt-price {
+                        font-size: 40px;
+                    }
+
+                    .mkdf-pt-value {
+                        font-size: 29px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include phone-landscape {
+
+    .mkdf-price-table.mkdf-item-space {
+        width: 100% !important;
+
+        .mkdf-pt-inner {
+
+            .mkdf-pt-col-1 {
+
+                .mkdf-pt-mark {
+                    padding: 0 0 0 10px;
+                }
+            }
+
+            .mkdf-pt-col-2 {
+                padding: 0 0 0 15px;
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Pricing Tables shortcode responsive style - end
+   ========================================================================== */

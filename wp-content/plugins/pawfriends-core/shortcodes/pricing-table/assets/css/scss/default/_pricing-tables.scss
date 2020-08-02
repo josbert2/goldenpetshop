@@ -1,0 +1,144 @@
+/* ==========================================================================
+   Pricing Tables shortcode style - begin
+   ========================================================================== */
+
+.mkdf-pricing-tables {
+    @include mkdfRelativeHolderLayout();
+}
+
+.mkdf-price-table {
+    margin-bottom: 72px !important;
+
+    .mkdf-pt-inner {
+        @include mkdfRelativeHolderLayout();
+
+        .mkdf-pt-image {
+            margin-bottom: 32px;
+
+            img {
+                border-radius: 5px;
+            }
+        }
+
+        .mkdf-pt-col-1 {
+            display: table-cell;
+            width: 28%;
+            vertical-align: top;
+
+            .mkdf-pl-price-holder {
+                @include mkdfSVGbg( #8dd9e9 );
+                color: #8dd9e9;
+                position: relative;
+                display: inline-block;
+                padding: 3px 23px 1px 15px;
+                transform: rotate(1deg);
+
+                .mkdf-pt-value,
+                .mkdf-pt-price {
+                    font-family: 'Amatic SC', sans-serif;
+                    color: #fff;
+                    font-weight: 700;
+                    font-size: 57px;
+                    line-height: 1em;
+                    position: relative;
+                    letter-spacing: 1px;
+                }
+
+                .mkdf-pt-value {
+                    font-size: 38px;
+                }
+
+                sup {
+                    bottom: 0;
+                }
+
+                svg {
+
+                    path {
+                        fill: currentColor;
+                        stroke: currentColor;
+                    }
+                }
+            }
+
+            .mkdf-pt-mark {
+                @include mkdfBody();
+                position: relative;
+                display: block;
+                padding: 0 2px 0 19px;
+                margin: 3px 0 0;
+            }
+        }
+
+        .mkdf-pt-col-2 {
+            display: table-cell;
+            width: 72%;
+            vertical-align: top;
+            text-align: left;
+            padding: 0 22px;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                margin: 0;
+                padding: 6px 0;
+
+                &.mkdf-pt-title-holder {
+                    position: relative;
+	                
+                    .mkdf-pt-title {
+                        @include mkdfDefaultHeadingStyle();
+                        @include mkdfH4();
+                        margin: 3px 0 0;
+                        display: block;
+	                    box-sizing: border-box;
+                    }
+
+                    .mkdf-pt-subtitle {
+                        display: block;
+                        margin: 16px 0 2px;
+                    }
+                }
+
+                &.mkdf-pt-content {
+
+                    ul {
+
+                        li {
+                            display: table;
+
+                            &:before {
+                                content: "\53";
+                                font-family: "dripicons-v2" !important;
+                                font-style: normal !important;
+                                font-weight: normal !important;
+                                font-variant: normal !important;
+                                text-transform: none !important;
+                                speak: none;
+                                font-size: 20px;
+                                line-height: 1;
+                                color: $first-main-color;
+                                -webkit-font-smoothing: antialiased;
+                                display: table-cell;
+                                position: relative;
+                                top: 5px;
+                                padding-right: 12px;
+                            }
+                        }
+                    }
+                }
+
+                &.mkdf-pt-button {
+                    padding: 22px 0 0;
+                }
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Pricing Tables shortcode style - end
+   ========================================================================== */

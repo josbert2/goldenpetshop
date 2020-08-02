@@ -1,0 +1,65 @@
+/* ==========================================================================
+   Portfolio Single - Huge Images layout style - begin
+   ========================================================================== */
+
+.mkdf-portfolio-single-holder {
+    
+    &.mkdf-ps-huge-images-layout {
+        padding: 0 4%;
+	    box-sizing: border-box;
+	    
+        .mkdf-ps-image-holder {
+            margin: 0 0 49px;
+        
+            .mkdf-ps-image {
+                margin: 0 0 40px;
+            
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+
+        .mkdf-ps-content-item {
+
+            .mkdf-st-text {
+                margin: 21px 0 7px;
+            }
+        }
+
+        .mkdf-ps-info-holder {
+            margin-top: 10px;
+
+            .mkdf-ps-info-item:not(.mkdf-ps-content-item) {
+                margin: 0 0 16px;
+
+                p, a {
+                    line-height: 2.3;
+                }
+
+                a {
+                    color: #8f9093;
+
+                    &:hover {
+                        color: $first-main-color;
+                    }
+                }
+            }
+        }
+
+        .mkdf-ps-navigation {
+            margin: 72px 0 0;
+        }
+
+	    @include laptop-landscape {
+		    padding: 0 40px;
+	    }
+	
+	    @include ipad-portrait {
+		    padding: 0 30px;
+	    }
+    }
+}
+/* ==========================================================================
+   Portfolio Single - Huge Images layout style - end
+   ========================================================================== */

@@ -1,0 +1,209 @@
+/* ==========================================================================
+   Clients Carousel shortcode style - begin
+   ========================================================================== */
+
+.mkdf-clients-carousel-holder {
+	@include mkdfRelativeHolderLayout();
+	
+	.mkdf-cc-inner {
+		@include mkdfRelativeHolderLayout();
+	}
+	
+	.mkdf-cc-item {
+		@include mkdfRelativeHolderLayout();
+		
+		.touch & {
+			cursor: pointer;
+		}
+		
+		img {
+			display: block;
+		}
+	}
+	
+	.mkdf-cc-link {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+	}
+}
+
+/***** Hover Types - begin *****/
+
+.mkdf-cc-hover-switch-images {
+	
+	.mkdf-cc-item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		.mkdf-cc-link, &.mkdf-cci-link,  &.mkdf-cci-no-link {
+
+			.mkdf-active-hover {
+				@include mkdfSVGbg(#fff);
+				display: block;
+				clip-path: circle(0);
+				-webkit-clip-path: circle(0);
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				transition: .4s;
+
+				.mkdf-safari &, .mkdf-edge &, .mkdf-ms-explorer & {
+					clip-path: circle(150%);
+					-webkit-clip-path: circle(150%);
+					opacity: 0;
+				}
+
+				svg {
+
+					&.mkdf-active-hover-left {
+						height: 101%;
+    					width: 11%;
+					}
+			
+					&.mkdf-active-hover-right {
+						right: -12px;
+						height: 101%;
+						width: 14%;
+					}
+				}
+			}
+
+			img {
+				z-index: 12;
+			}
+	
+			&:hover {
+	
+				.mkdf-active-hover {
+					clip-path: circle(150%);
+					-webkit-clip-path: circle(150%);
+					transition: 1.2s;
+
+					.mkdf-safari &, .mkdf-edge &, .mkdf-ms-explorer & {
+						opacity: 1;
+						transition: .3s;
+					}
+				}
+			}
+		}
+		
+		&.mkdf-cci-has-link {
+			
+			a {
+				
+				&:hover {
+					
+					.mkdf-cc-image {
+						opacity: 0;
+					}
+					
+					.mkdf-cc-hover-image {
+						opacity: 1;
+					}
+				}
+			}
+		}
+		
+		&.mkdf-cci-no-link {
+			
+			&:hover {
+				
+				.mkdf-cc-image {
+					opacity: 0;
+				}
+				
+				.mkdf-cc-hover-image {
+					opacity: 1;
+				}
+			}
+			
+			.mkdf-cc-hover-image {
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+		
+		.mkdf-cc-image {
+			width: auto;
+			opacity: 1;
+			will-change: opacity;
+			transition: opacity .15s ease-out;
+		}
+		
+		.mkdf-cc-hover-image {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: auto;
+			opacity: 0;
+			will-change: opacity;
+			transition: opacity .15s ease-out;
+		}
+	}
+}
+
+.mkdf-cc-hover-roll-over {
+	
+	.mkdf-cc-item {
+		overflow: hidden;
+		
+		&.mkdf-cci-has-link {
+			
+			a {
+				
+				&:hover {
+					
+					.mkdf-cc-image {
+						transform: translateY(100%);
+					}
+					
+					.mkdf-cc-hover-image {
+						transform: translate(-50%, 0);
+					}
+				}
+			}
+		}
+		
+		&.mkdf-cci-no-link {
+			
+			&:hover {
+				
+				.mkdf-cc-image {
+					transform: translateY(100%);
+				}
+				
+				.mkdf-cc-hover-image {
+					transform: translate(-50%, 0);
+				}
+			}
+		}
+		
+		.mkdf-cc-image {
+			position: relative;
+			display: block;
+			width: auto;
+			margin: 0 auto;
+			transition: transform .4s ease;
+		}
+		
+		.mkdf-cc-hover-image {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			width: auto;
+			transform: translate(-50%, -100%);
+			transition: transform .4s ease;
+		}
+	}
+}
+
+/***** Hover Types - end *****/
+
+/* ==========================================================================
+   Clients Carousel shortcode style - end
+   ========================================================================== */
